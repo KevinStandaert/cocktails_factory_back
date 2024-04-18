@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=cocktails_factory
+
+init 2024-04-18T13:28:32Z Kevin S. <kevin.standaert@gmail.com> # initialisation db
