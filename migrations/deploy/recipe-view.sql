@@ -55,7 +55,8 @@ JOIN "recipe_ingredient"
 ON "recipe"."id" = "recipe_id"
 JOIN "ingredient"
 ON "ingredient_id" = "ingredient"."id"
-GROUP BY "recipe"."id", "recipe"."name", "recipe"."url_image";
+GROUP BY "recipe"."id", "recipe"."name", "recipe"."url_image"
+ORDER BY "recipe"."id" ASC;
 
 
 --  Create a view named recipe_view_random that returns the name, image and ingredients of 3 random recipes

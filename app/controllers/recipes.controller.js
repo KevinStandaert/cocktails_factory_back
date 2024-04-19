@@ -31,7 +31,7 @@ export default class RecipeController extends CoreController {
   }
 
   static async getAllRecipesCards(_, res, next) {
-    const recipes = await this.datamapper.finAllRecipesCards();
+    const recipes = await this.datamapper.findAllRecipesCards();
     if (!recipes) {
       const err = new ApiError(
         'No recipes found',

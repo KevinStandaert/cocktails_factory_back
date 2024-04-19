@@ -3,8 +3,15 @@
 ### getAllRecipesWithAll
 GET {{endpoint}}/recipes/
 
-### getRecipeById
+### getOneRecipeById
 GET {{endpoint}}/recipes/5
 
-### getRecipesOnCards
+### getAllRecipesByCards
 GET {{endpoint}}/recipes/cards
+
+### getOneRecipeByCards
+GET {{endpoint}}/recipes/cards/7
+
+
+### getRecipesRandomly
+GET {{endpoint}}/recipes/cards/random
