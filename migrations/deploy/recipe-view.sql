@@ -2,12 +2,12 @@
 
 BEGIN;
 
-CREATE OR REPLACE VIEW "recipe_view" AS
+--  Create a view named recipe_view_all that returns all the information about a recipe 
+CREATE OR REPLACE VIEW "recipe_view_all" AS
 WITH ingredient_info AS (
     SELECT
         "recipe_id",
-        ARRAY_AGG("ingredient"."name" ORDER BY "ingredient"."name") AS "ingredient_names",
-        ARRAY_AGG("recipe_ingredient"."quantity" ORDER BY "ingredient"."name") AS "ingredient_quantities"
+        json_agg(json_build_object('name', "ingredient"."name", 'quantity', "recipe_ingredient"."quantity") ORDER BY "ingredient"."name") AS "ingredients"
     FROM
         "recipe_ingredient"
     JOIN
@@ -22,8 +22,7 @@ SELECT
     "glass"."name" AS "glass_name",
     json_agg(DISTINCT "category"."name") AS "category_name",
     json_agg(DISTINCT "ustensil"."name") AS "ustensil_name",
-    "ingredient_info"."ingredient_names" AS "ingredient_names",
-    "ingredient_info"."ingredient_quantities" AS "ingredient_quantities"
+    (SELECT "ingredients" FROM "ingredient_info" WHERE "ingredient_info"."recipe_id" = "recipe"."id") AS "ingredients"
 FROM
     "recipe"
 JOIN
@@ -40,10 +39,22 @@ JOIN
     "recipe_ustensil" ON "recipe"."id" = "recipe_ustensil"."recipe_id"
 JOIN
     "ustensil" ON "ustensil"."id" = "ustensil_id"
-JOIN
-    "ingredient_info" ON "recipe"."id" = "ingredient_info"."recipe_id"
 GROUP BY
-    "recipe"."id", "method"."name", "taste"."type", "glass"."name", "ingredient_info"."ingredient_names", "ingredient_info"."ingredient_quantities";
+    "recipe"."id", "method"."name", "taste"."type", "glass"."name";
+
+    
+--  Create a view named recipe_view_card that returns the name, image and ingredients of a recipe
+CREATE OR REPLACE VIEW recipe_view_card AS
+SELECT 
+"recipe"."name",
+"recipe"."url_image",
+json_agg( "ingredient"."name")
+FROM "recipe"
+JOIN "recipe_ingredient"
+ON "recipe"."id" = "recipe_id"
+JOIN "ingredient"
+ON "ingredient_id" = "ingredient"."id"
+GROUP BY "recipe"."name", "recipe"."url_image"
 
 
 COMMIT;
