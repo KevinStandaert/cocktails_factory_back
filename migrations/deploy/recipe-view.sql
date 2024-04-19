@@ -42,10 +42,11 @@ JOIN
 GROUP BY
     "recipe"."id", "method"."name", "taste"."type", "glass"."name";
 
-    
+
 --  Create a view named recipe_view_card that returns the name, image and ingredients of a recipe
 CREATE OR REPLACE VIEW recipe_view_card AS
 SELECT 
+"recipe"."id",
 "recipe"."name",
 "recipe"."url_image",
 json_agg( "ingredient"."name")
@@ -54,7 +55,22 @@ JOIN "recipe_ingredient"
 ON "recipe"."id" = "recipe_id"
 JOIN "ingredient"
 ON "ingredient_id" = "ingredient"."id"
+GROUP BY "recipe"."id", "recipe"."name", "recipe"."url_image";
+
+
+--  Create a view named recipe_view_random that returns the name, image and ingredients of 3 random recipes
+CREATE OR REPLACE VIEW "recipe_view_random" AS
+SELECT 
+    "recipe"."name",
+    "recipe"."url_image",
+    json_agg("ingredient"."name")
+FROM "recipe"
+JOIN "recipe_ingredient" ON "recipe"."id" = "recipe_id"
+JOIN "ingredient" ON "ingredient_id" = "ingredient"."id"
 GROUP BY "recipe"."name", "recipe"."url_image"
+ORDER BY 
+RANDOM()
+LIMIT 3;
 
 
 COMMIT;
