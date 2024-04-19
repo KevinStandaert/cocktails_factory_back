@@ -2,3 +2,9 @@
 
 ### getAllRecipesWithAll
 GET {{endpoint}}/recipes/
+
+### getRecipeById
+GET {{endpoint}}/recipes/5
+
+### getRecipesOnCards
+GET {{endpoint}}/recipes/cards
