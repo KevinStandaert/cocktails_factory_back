@@ -1,9 +1,9 @@
 import express from 'express';
-import exampleController from '../../controllers/example.controller.js';
-import controllerWrapper from '../../helpers/controller.wrapper.js';
-import validationMiddleware from '../../middlewares/validation.middleware.js';
-import exampleCreateSchema from '../../schemas/example.create.schema.js';
-import exampleUpdateSchema from '../../schemas/example.update.schema.js';
+import exampleController from '../../../controllers/example.controller.js';
+import controllerWrapper from '../../../helpers/controller.wrapper.js';
+import validationMiddleware from '../../../middlewares/validation.middleware.js';
+import exampleCreateSchema from '../../../schemas/example.create.schema.js';
+import exampleUpdateSchema from '../../../schemas/example.update.schema.js';
 
 const exampleRouter = express.Router();
 
