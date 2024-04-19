@@ -2,3 +2,4 @@
 %project=cocktails_factory
 
 init 2024-04-18T13:28:32Z Kevin S. <kevin.standaert@gmail.com> # initialisation db
+recipe-view 2024-04-19T06:51:05Z Kevin S. <kevin.standaert@gmail.com> # ajout de la view pour recuperer toutes les jointures
