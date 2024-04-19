@@ -71,14 +71,33 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity") VALUE
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1, 1),
 (1, 2),
-(1, 3);
+(1, 3),
+(2, 1),
+(2, 2),
+(2, 3),
+(3, 1),
+(3, 2),
+(3, 3),
+(4, 1),
+(4, 2),
+(4, 3),
+(5, 1),
+(5, 2),
+(5, 3),
+(6, 1),
+(6, 2),
+(6, 3),
+(7, 1),
+(7, 2),
+(7, 3);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (2, 1),
 (3, 1),
 (4, 1),
 (5, 1),
-(6, 1);
+(6, 1),
+(7, 1);
 
 COMMIT;
 

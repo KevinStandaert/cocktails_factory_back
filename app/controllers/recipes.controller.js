@@ -2,10 +2,10 @@ import RecipeDatamapper from '../datamappers/recipes.datamapper.js';
 import CoreController from './core.controller.js';
 import ApiError from '../errors/api.error.js';
 
-export default class ExempleController extends CoreController {
+export default class RecipeController extends CoreController {
   static datamapper = RecipeDatamapper;
 
-  static async findAllRecipesWithAll(_, res, next) {
+  static async getAllRecipesWithAll(_, res, next) {
     const recipes = await this.datamapper.findAllRecipesWithAll();
     if (!recipes) {
       const err = new ApiError(
@@ -17,7 +17,7 @@ export default class ExempleController extends CoreController {
     return res.status(200).json(recipes);
   }
 
-  static async findOneRecipeWithAll(req, res, next) {
+  static async getOneRecipeWithAll(req, res, next) {
     const { id } = req.params;
     const recipe = await this.datamapper.findOneRecipeWithAll(id);
     if (!recipe) {
@@ -30,8 +30,8 @@ export default class ExempleController extends CoreController {
     return res.status(200).json(recipe);
   }
 
-  static async finAllRecipesCards(_, res, next) {
-    const recipes = await this.datamapper.finAllRecipesCards();
+  static async getAllRecipesCards(_, res, next) {
+    const recipes = await this.datamapper.findAllRecipesCards();
     if (!recipes) {
       const err = new ApiError(
         'No recipes found',
@@ -42,7 +42,7 @@ export default class ExempleController extends CoreController {
     return res.status(200).json(recipes);
   }
 
-  static async findOneRecipeCard(req, res, next) {
+  static async getOneRecipeCard(req, res, next) {
     const { id } = req.params;
     const recipe = await this.datamapper.findOneRecipeCard(id);
     if (!recipe) {
@@ -55,7 +55,7 @@ export default class ExempleController extends CoreController {
     return res.status(200).json(recipe);
   }
 
-  static async findRecipesRandomly(_, res, next) {
+  static async getRecipesRandomly(_, res, next) {
     const recipes = await this.datamapper.findRecipesRandomly();
     if (!recipes) {
       const err = new ApiError(

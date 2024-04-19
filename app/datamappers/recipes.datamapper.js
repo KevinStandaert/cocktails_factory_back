@@ -23,16 +23,16 @@ export default class RecipeDatamapper extends CoreDatamapper {
   static writeTableName = 'recipe';
 
   static async findAllRecipesWithAll() {
-    const result = await client.query('SELECT * FROM recipe_with_all');
+    const result = await client.query('SELECT * FROM "recipe_view_all"');
     return result.rows;
   }
 
   static async findOneRecipeWithAll(id) {
-    const result = await client.query('SELECT * FROM recipe_with_all WHERE id = $1', [id]);
+    const result = await client.query('SELECT * FROM recipe_view_all WHERE id = $1', [id]);
     return result.rows[0];
   }
 
-  static async finAllRecipesCards() {
+  static async findAllRecipesCards() {
     const result = await client.query('SELECT * FROM recipe_view_card');
     return result.rows;
   }

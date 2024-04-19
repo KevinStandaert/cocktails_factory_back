@@ -1,0 +1,17 @@
+@endpoint=http://localhost:4000/api
+
+### getAllRecipesWithAll
+GET {{endpoint}}/recipes/
+
+### getOneRecipeById
+GET {{endpoint}}/recipes/5
+
+### getAllRecipesByCards
+GET {{endpoint}}/recipes/cards
+
+### getOneRecipeByCards
+GET {{endpoint}}/recipes/cards/7
+
+
+### getRecipesRandomly
+GET {{endpoint}}/recipes/cards/random
