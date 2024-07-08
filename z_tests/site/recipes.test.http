@@ -3,8 +3,6 @@
 ### getAllRecipesWithAll
 GET {{endpoint}}/recipes/
 
-test
-
 ### getOneRecipeById
 GET {{endpoint}}/recipes/5
 
