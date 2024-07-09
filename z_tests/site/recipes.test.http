@@ -1,7 +1,7 @@
 @endpoint=http://localhost:4000/api
 
 ### getAllRecipesWithAll
-GET {{endpoint}}/recipes/
+GET {{endpoint}}/recipes
 
 ### getOneRecipeById
 GET {{endpoint}}/recipes/5

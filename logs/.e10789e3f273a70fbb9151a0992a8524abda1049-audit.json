@@ -59,6 +59,21 @@
             "date": 1720427613543,
             "name": "logs/combined.log.2024-07-08-10-33",
             "hash": "72e563c6760b4983632796c6645cbf97b259b4b46c0d00118639920b4c610f59"
+        },
+        {
+            "date": 1720433828546,
+            "name": "logs/combined.log.2024-07-08-12-17",
+            "hash": "3c6c264883eabb3370215d4a537cb2a688320c59d9c537c0b24b7a29560cc5ee"
+        },
+        {
+            "date": 1720509374013,
+            "name": "logs/combined.log.2024-07-09-09-16",
+            "hash": "e8f411945b97c29bd52b20150d490864a4f622d4f52ca180d234157eda5ff2af"
+        },
+        {
+            "date": 1720518122882,
+            "name": "logs/combined.log.2024-07-09-11-42",
+            "hash": "d5899d6254656ce1a8711d3af8beeb13cd6303c275a0f70fadc3a9bd855a158e"
         }
     ],
     "hashType": "sha256"
