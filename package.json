@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "db:reset": "sqitch revert -y; sqitch deploy; psql -d cocktails_factory -f fake_seeding.sql",
+    "db:reset": "sqitch revert -y; sqitch deploy; psql -d cocktails_factory -f real_seeding.sql",
     "dev": "DEBUG=app:* npx nodemon"
   },
   "keywords": [],
