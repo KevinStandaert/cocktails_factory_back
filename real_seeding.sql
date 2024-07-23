@@ -74,8 +74,8 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Jus de citron', 'Jus extrait du citron, utilisé pour ajouter une acidité et un éclat de saveur.', 'jus_de_citron.webp'),
 ('Jus de fruits de la passion', 'Jus de fruits de la passion.', 'Jus_de_fruits_de_la_passion.webp'),
 ('Jus de citron vert', 'Jus extrait du lime, souvent utilisé pour son acidité vive et son goût légèrement amer.', 'jus_de_citron_vert.webp'),
-('Citron vert', 'Citron vert', 'citron_vert.webp'),('Feuille de menthe', 'Feuille de menthe', 'feuille_de_menthe.webp'),
-('Ginger beer', 'Soda sans alcool pétillant au goût de gingembre prononcé.', 'ginger_beer.webp'),
+('Citron vert', 'Citron vert', 'citron_vert.webp'),
+('Feuille de menthe', 'Feuille de menthe', 'feuille_de_menthe.webp'),
 ('Ginger beer', 'Soda sans alcool pétillant au goût de gingembre prononcé.', 'ginger_beer.webp'),
 ('Lait de coco', 'Liquide crémeux extrait de la chair de noix de coco.', 'lait_de_coco.webp'),
 ('Blanc d''oeuf', 'Blanc d''oeuf.', 'blanc_d_oeuf.webp'),('Aquafaba', 'Jus de cuisson ou liquide de conservation des pois chiche.', 'aquafaba.webp'),
@@ -87,11 +87,13 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Vermouth blanc', 'Vin fortifié aromatisé avec des herbes et des épices, souvent doux.', 'vermouth_blanc.webp'),
 ('Vermouth dry', 'Vin fortifié aromatisé avec des herbes et des épices, souvent sec.', 'vermouth_dry.webp'),
 ('Rondelle d''orange', 'Rondelle d''orange.', 'rondelle_d_orange.webp'),
-('Tonic', 'Boisson gazeuse contenant de la quinine ce qui donne un goût lègèrement amer.', 'tonic.webp');
+('Tonic', 'Boisson gazeuse contenant de la quinine ce qui donne un goût lègèrement amer.', 'tonic.webp'),
+('Tranche Ananas frais', 'Ananas frais.', 'tranche_ananas_frais.webp');
 
-INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
+INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel. Pour un goût plus délicat, privilégiez une tequila reposado ou añejo.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
 ('Italian spritz', 'Il se compose principalement de trois ingrédients : Prosecco, Aperol (ou parfois Campari) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement amère et rafraîchissante, souvent servie avec une tranche d''orange. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
-Il est possible de remplacer l''Aperol par d''autres liqueurs : le Saint Germain pour une explosion de fraîcheur et un goût floral, le Campari pour une amertume encore plus prononcée, le Limoncello pour une note citronnée, ou la liqueur de framboise pour un goût très fruité. La seule limite est votre imagination!', 'Le Spritz est un cocktail italien emblématique, originaire de la région de Venise. Le Spritz aurait été créé au 19e siècle lorsque les soldats autrichiens, alors en occupation en Italie du Nord, ont commencé à mélanger le vin local avec de l''eau gazeuse pour le rendre moins fort et plus rafraîchissant. Au fil des années, la recette du Spritz a évolué. Au lieu du simple mélange de vin et d''eau gazeuse, des liqueurs comme l''Aperol, le Campari, et le Select ont été ajoutées, donnant au cocktail ses saveurs distinctives et sa couleur vive.', 'italian_spritz_cocktail.webp', 'Remplir le verre avec de gros glaçons.', 'Verser l''Aperol, le Prosecco (de préférence extra dry pour ne pas ajouter trop de sucre) et l''eau gazeuse.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter une rondelle d''orange', 'Rajouter de la glace si nécessaire', 'Déguster', 2, 4, 5);
+Il est possible de remplacer l''Aperol par d''autres liqueurs : le Saint Germain pour une explosion de fraîcheur et un goût floral, le Campari pour une amertume encore plus prononcée, le Limoncello pour une note citronnée, ou la liqueur de framboise pour un goût très fruité. La seule limite est votre imagination!', 'Le Spritz est un cocktail italien emblématique, originaire de la région de Venise. Le Spritz aurait été créé au 19e siècle lorsque les soldats autrichiens, alors en occupation en Italie du Nord, ont commencé à mélanger le vin local avec de l''eau gazeuse pour le rendre moins fort et plus rafraîchissant. Au fil des années, la recette du Spritz a évolué. Au lieu du simple mélange de vin et d''eau gazeuse, des liqueurs comme l''Aperol, le Campari, et le Select ont été ajoutées, donnant au cocktail ses saveurs distinctives et sa couleur vive.', 'italian_spritz_cocktail.webp', 'Remplir le verre avec de gros glaçons.', 'Verser l''Aperol, le Prosecco (de préférence extra dry pour ne pas ajouter trop de sucre) et l''eau gazeuse.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter une rondelle d''orange', 'Rajouter de la glace si nécessaire', 'Déguster', 2, 4, 5),
+('Piña Colada', 'La Piña Colada est un cocktail tropical crémeux à base de rhum, de jus d''ananas et de lait de coco. La boisson est généralement garnie d''une tranche d''ananas et d''une cerise au marasquin. La Piña Colada est un cocktail sucré et rafraîchissant, parfait pour les journées chaudes et ensoleillées.', 'Pour une version sans alcool, remplacez le rhum par du jus d''ananas supplémentaire et ajoutez un peu de sirop de Rhum pour la saveur.', 'La Piña Colada a été inventée en 1954 à Porto Rico par le barman Ramón "Monchito" Marrero. Il a créé la recette originale au Caribe Hilton Hotel à San Juan, en utilisant du rhum local, du jus d''ananas frais et du lait de coco.', 'pina_colada_cocktail.webp', 'Dans un blender, ajouter l''ananas frais.', 'Ajouter le rum, le jus d''ananas et le lait de coco.','Ajouter de la glace pilée à hauteur et mixer jusqu''à obtenir une texture lisse et crémeuse.', 'Verser le mélange dans un verre de type Hurricane ou Tiki', 'Garnir d''une tranche d''ananas et d''une cerise au marasquin.', 'Déguster', 4, 6, 12);
 
 INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktails classiques sont les recettes traditionnelles et intemporelles qui ont souvent été créées dans les années 1800 et au début des années 1900. Exemples: Martini, Old Fashioned, Manhattan, Negroni, Margarita.'),
 ('Sour', 'Les cocktails sour se caractérisent par une combinaison d''un spiritueux, de jus de citron ou de lime, et de sucre. Réalisé au shaker. Ils peuvent également inclure un blanc d''œuf pour une texture plus soyeuse. Exemples: Whiskey Sour, Pisco Sour, Amaretto Sour, Margarita, Daiquiri.'),
@@ -113,7 +115,11 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity") VALUE
 (1, 29, 25),
 (2, 19, 60),
 (2, 37, 120),
-(2, 39, 20);
+(2, 39, 20),
+(3, 45, 1),
+(3, 4, 50),
+(3, 24, 120),
+(3, 33, 50);
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1,2),
@@ -121,12 +127,16 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1,6),
 (1,7),
 (2,2),
-(2,6);
+(2,6),
+(3,6),
+(3,8);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (1, 2),
 (2, 1),
 (2, 7),
-(2, 12);
+(2, 12),
+(3, 1),
+(3, 6);
 
 COMMIT;
