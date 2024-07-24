@@ -59,7 +59,7 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Triple sec', 'Liqueur d''orange utilisée par exemple dans les Margaritas et les Cosmopolitans. La plus connue est le Cointreau', 'triple_sec.webp'),
 ('Amaretto', 'Liqueur d''amande, souvent utilisée dans les cocktails comme l''Amaretto Sour.', 'amaretto.webp'),
 ('Limoncello', 'Liqueur de citron d''origine italienne', 'limoncello.webp'),
-('Liqueu de café', 'Liqueur à base de café. La plus connue est le Kahlúa d''origine mexicaine.', 'liqueur_de_cafe.webp'),
+('Liqueur de café', 'Liqueur à base de café. La plus connue est le Kahlúa d''origine mexicaine.', 'liqueur_de_cafe.webp'),
 ('Sirop de sucre', 'Mélange de sucre et d''eau en proportions égales, utilisé pour sucrer les cocktails.', 'sirop_de_sucre.webp'),
 ('Sirop d''orgeat', 'Sirop au goût d''amandes', 'sirop_d_orgeat.webp'),
 ('Crème', 'Crème liquide', 'creme_liquide.webp'),
@@ -78,7 +78,8 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Menthe', 'Feuille de menthe', 'feuille_de_menthe.webp'),
 ('Ginger beer', 'Soda sans alcool pétillant au goût de gingembre prononcé.', 'ginger_beer.webp'),
 ('Lait de coco', 'Liquide crémeux extrait de la chair de noix de coco.', 'lait_de_coco.webp'),
-('Blanc d''oeuf', 'Blanc d''oeuf.', 'blanc_d_oeuf.webp'),('Aquafaba', 'Jus de cuisson ou liquide de conservation des pois chiche.', 'aquafaba.webp'),
+('Blanc d''oeuf', 'Blanc d''oeuf.', 'blanc_d_oeuf.webp'),
+('Aquafaba', 'Jus de cuisson ou liquide de conservation des pois chiche.', 'aquafaba.webp'),
 ('Expresso', 'Café court.', 'expresso.webp'),
 ('Prosecco dry', 'Vin effervescent italien', 'prosecco_dry.webp'),
 ('Pisco', 'Spiritueux à base de raisin au goût floral. Provient du Pérou et du Chili.', 'pisco.webp'),
@@ -94,7 +95,8 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel. Pour un goût plus délicat, privilégiez une tequila reposado ou añejo.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
 ('Italian spritz', 'Il se compose principalement de trois ingrédients : Prosecco, Aperol (ou parfois Campari) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement amère et rafraîchissante, souvent servie avec une tranche d''orange. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
 Il est possible de remplacer l''Aperol par d''autres liqueurs : le Saint Germain pour une explosion de fraîcheur et un goût floral, le Campari pour une amertume encore plus prononcée, le Limoncello pour une note citronnée, ou la liqueur de framboise pour un goût très fruité. La seule limite est votre imagination!', 'Le Spritz est un cocktail italien emblématique, originaire de la région de Venise. Le Spritz aurait été créé au 19e siècle lorsque les soldats autrichiens, alors en occupation en Italie du Nord, ont commencé à mélanger le vin local avec de l''eau gazeuse pour le rendre moins fort et plus rafraîchissant. Au fil des années, la recette du Spritz a évolué. Au lieu du simple mélange de vin et d''eau gazeuse, des liqueurs comme l''Aperol, le Campari, et le Select ont été ajoutées, donnant au cocktail ses saveurs distinctives et sa couleur vive.', 'italian_spritz_cocktail.webp', 'Remplir le verre avec de gros glaçons.', 'Verser l''Aperol, le Prosecco (de préférence extra dry pour ne pas ajouter trop de sucre) et l''eau gazeuse.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter une rondelle d''orange', 'Rajouter de la glace si nécessaire', 'Déguster', 2, 4, 5),
-('Piña Colada', 'La Piña Colada est un cocktail tropical crémeux à base de rhum, de jus d''ananas et de lait de coco. La boisson est généralement garnie d''une tranche d''ananas et d''une cerise au marasquin. La Piña Colada est un cocktail sucré et rafraîchissant, parfait pour les journées chaudes et ensoleillées.', 'Pour une version sans alcool, remplacez le rhum par du jus d''ananas supplémentaire et ajoutez un peu de sirop de Rhum pour la saveur.', 'La Piña Colada a été inventée en 1954 à Porto Rico par le barman Ramón "Monchito" Marrero. Il a créé la recette originale au Caribe Hilton Hotel à San Juan, en utilisant du rhum local, du jus d''ananas frais et du lait de coco.', 'pina_colada_cocktail.webp', 'Dans un blender, ajouter l''ananas frais.', 'Ajouter le rum, le jus d''ananas et le lait de coco.','Ajouter de la glace pilée à hauteur et mixer jusqu''à obtenir une texture lisse et crémeuse.', 'Verser le mélange dans un verre de type Hurricane ou Tiki', 'Garnir d''une tranche d''ananas et d''une cerise au marasquin.', 'Déguster', 4, 6, 12);
+('Piña Colada', 'La Piña Colada est un cocktail tropical crémeux à base de rhum, de jus d''ananas et de lait de coco. La boisson est généralement garnie d''une tranche d''ananas et d''une cerise au marasquin. La Piña Colada est un cocktail sucré et rafraîchissant, parfait pour les journées chaudes et ensoleillées.', 'Pour une version sans alcool, remplacez le rhum par du jus d''ananas supplémentaire et ajoutez un peu de sirop de Rhum pour la saveur.', 'La Piña Colada a été inventée en 1954 à Porto Rico par le barman Ramón "Monchito" Marrero. Il a créé la recette originale au Caribe Hilton Hotel à San Juan, en utilisant du rhum local, du jus d''ananas frais et du lait de coco.', 'pina_colada_cocktail.webp', 'Dans un blender, ajouter l''ananas frais.', 'Ajouter le rum, le jus d''ananas et le lait de coco.','Ajouter de la glace pilée à hauteur et mixer jusqu''à obtenir une texture lisse et crémeuse.', 'Verser le mélange dans un verre de type Hurricane ou Tiki', 'Garnir d''une tranche d''ananas et d''une cerise au marasquin.', 'Déguster', 4, 6, 12),
+('Expresso martini', 'L''Expresso Martini est un cocktail énergisant et sophistiqué, mélangeant la saveur riche du café expresso avec la douceur de la liqueur de café et la force de la vodka. La boisson est servie dans un verre à Martini et est souvent garnie de grains de café pour une touche décorative. Les trois grains de café utilisés pour décorer un Espresso Martini représentent traditionnellement la santé, la richesse et le bonheur. Cette décoration symbolique est empruntée à une ancienne tradition italienne de servir Sambuca avec trois grains de café, appelée "con la mosca" (avec les mouches), qui se dit apporter ces trois souhaits au buveur.', 'Pour plus de douceur, il est possible de remplacer le sirop de sucre par du sirop de vanille ou de cerise selon vos goûts. Afin de garantir l''excellence, optez pour une vodka et un café de qualité supérieure. Il est également possible d''utiliser une liqueur de café aromatisée telle que la Patron Incendio, qui ajoutera un côté épicé et légèrement piquant. ', 'L''Espresso Martini a été inventé par Dick Bradsell, un célèbre barman britannique souvent surnommé le "parrain de la scène cocktail londonienne". La création a eu lieu au Fred''s Bar à Soho, Londres, où Bradsell travaillait à l''époque, en 1983. Selon la légende, une jeune femme (souvent identifiée comme un mannequin célèbre) est entrée dans le bar et a demandé un cocktail qui "me réveillera, puis me cassera" (en anglais : "wake me up, then fuck me up").', 'expresso_martini_cocktail.webp', 'Mettre des glaçons dans le verre pour le rafraîchir (il est également possible de garder ses verres au réfrigérateur quelques minutes avant).', 'Dans le shaker, ajouter tous les ingrédients en terminant par le café.', 'Ajouter de la glace dans le shaker et shaker énergiquement.', 'Enlever les glaçons du verre et passer le cocktail dans le verre en utilisant une passoire supplémentaire pour récupérer les petits morceaux de glace qui se sont cassés dans le shaker.', 'Décorer avec 3 petits grains de café.', 'Déguster.',1,1,1);
 
 INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktails classiques sont les recettes traditionnelles et intemporelles qui ont souvent été créées dans les années 1800 et au début des années 1900. Exemples: Martini, Old Fashioned, Manhattan, Negroni, Margarita.'),
 ('Sour', 'Les cocktails sour se caractérisent par une combinaison d''un spiritueux, de jus de citron ou de lime, et de sucre. Réalisé au shaker. Ils peuvent également inclure un blanc d''œuf pour une texture plus soyeuse. Exemples: Whiskey Sour, Pisco Sour, Amaretto Sour, Margarita, Daiquiri.'),
@@ -120,17 +122,24 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit"
 (3, 45, 1,'tranche'),
 (3, 4, 50, 'ml'),
 (3, 24, 120, 'ml'),
-(3, 33, 50, 'ml');
+(3, 33, 50, 'ml'),
+(4, 1, 50, 'ml'),
+(4, 15, 20, 'ml'),
+(4, 36, 1, ''),
+(4, 16, 5, 'ml');
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
-(1,2),
-(1,4),
-(1,6),
-(1,7),
-(2,2),
-(2,6),
-(3,6),
-(3,8);
+(1, 2),
+(1, 4),
+(1, 6),
+(1, 7),
+(2, 2),
+(2, 6),
+(3, 6),
+(3, 8),
+(4, 1),
+(4, 4),
+(4, 6);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (1, 2),
@@ -138,6 +147,7 @@ INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (2, 7),
 (2, 12),
 (3, 1),
-(3, 6);
+(3, 6),
+(4, 8);
 
 COMMIT;
