@@ -17,7 +17,8 @@ INSERT INTO "taste" ("type") VALUES ('Doux'),
 ('Floral'),
 ('Boisé'),
 ('Fumé'),
-('Umammi');
+('Umammi'),
+('Corsé');
 
 INSERT INTO "glass" ("name", "capacity", "description", "url_image") VALUES ('Martini', 20, 'Verre en forme de cône avec un pied long et mince. Utilisé pour servir des cocktails comme le Martini, le Cosmopolitan, et d''autres cocktails "up" (servis sans glace).', 'martini_glass.webp'),
 ('Old fashioned', 25, 'Petit verre à fond épais, aussi appelé "rocks glass" ou "lowball". Utilisé pour les cocktails servis avec des glaçons comme l''Old Fashioned, le Negroni, et le Whiskey Sour.', 'old_fashioned_glass.webp'),
@@ -88,7 +89,7 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Vermouth rouge', 'Vin fortifié aromatisé avec des herbes et des épices, souvent doux.', 'vermouth_rouge.webp'),
 ('Vermouth blanc', 'Vin fortifié aromatisé avec des herbes et des épices, souvent doux.', 'vermouth_blanc.webp'),
 ('Vermouth dry', 'Vin fortifié aromatisé avec des herbes et des épices, souvent sec.', 'vermouth_dry.webp'),
-('Rondelle d''orange', 'Rondelle d''orange.', 'rondelle_d_orange.webp'),
+('orange', 'orange.', 'orange.webp'),
 ('Tonic', 'Boisson gazeuse contenant de la quinine ce qui donne un goût lègèrement amer.', 'tonic.webp'),
 ('Ananas frais', 'Ananas frais.', 'tranche_ananas_frais.webp'),
 ('Basilic', 'Feuille de basilic.', 'feuille_de_basilic.webp');
@@ -98,7 +99,9 @@ INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "
 Il est possible de remplacer l''Aperol par d''autres liqueurs : le Saint Germain pour une explosion de fraîcheur et un goût floral, le Campari pour une amertume encore plus prononcée, le Limoncello pour une note citronnée, ou la liqueur de framboise pour un goût très fruité. La seule limite est votre imagination!', 'Le Spritz est un cocktail italien emblématique, originaire de la région de Venise. Le Spritz aurait été créé au 19e siècle lorsque les soldats autrichiens, alors en occupation en Italie du Nord, ont commencé à mélanger le vin local avec de l''eau gazeuse pour le rendre moins fort et plus rafraîchissant. Au fil des années, la recette du Spritz a évolué. Au lieu du simple mélange de vin et d''eau gazeuse, des liqueurs comme l''Aperol, le Campari, et le Select ont été ajoutées, donnant au cocktail ses saveurs distinctives et sa couleur vive.', 'italian_spritz_cocktail.webp', 'Remplir le verre avec de gros glaçons.', 'Verser l''Aperol, le Prosecco (de préférence extra dry pour ne pas ajouter trop de sucre) et l''eau gazeuse.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter une rondelle d''orange', 'Rajouter de la glace si nécessaire', 'Déguster', 2, 4, 5),
 ('Piña Colada', 'La Piña Colada est un cocktail tropical crémeux à base de rhum, de jus d''ananas et de lait de coco. La boisson est généralement garnie d''une tranche d''ananas et d''une cerise au marasquin. La Piña Colada est un cocktail sucré et rafraîchissant, parfait pour les journées chaudes et ensoleillées.', 'Pour une version sans alcool, remplacez le rhum par du jus d''ananas supplémentaire et ajoutez un peu de sirop de Rhum pour la saveur.', 'La Piña Colada a été inventée en 1954 à Porto Rico par le barman Ramón "Monchito" Marrero. Il a créé la recette originale au Caribe Hilton Hotel à San Juan, en utilisant du rhum local, du jus d''ananas frais et du lait de coco.', 'pina_colada_cocktail.webp', 'Dans un blender, ajouter l''ananas frais.', 'Ajouter le rum, le jus d''ananas et le lait de coco.','Ajouter de la glace pilée à hauteur et mixer jusqu''à obtenir une texture lisse et crémeuse.', 'Verser le mélange dans un verre de type Hurricane ou Tiki', 'Garnir d''une tranche d''ananas et d''une cerise au marasquin.', 'Déguster', 4, 6, 12),
 ('Expresso martini', 'L''Expresso Martini est un cocktail énergisant et sophistiqué, mélangeant la saveur riche du café expresso avec la douceur de la liqueur de café et la force de la vodka. La boisson est servie dans un verre à Martini et est souvent garnie de grains de café pour une touche décorative. Les trois grains de café utilisés pour décorer un Espresso Martini représentent traditionnellement la santé, la richesse et le bonheur. Cette décoration symbolique est empruntée à une ancienne tradition italienne de servir Sambuca avec trois grains de café, appelée "con la mosca" (avec les mouches), qui se dit apporter ces trois souhaits au buveur.', 'Pour plus de douceur, il est possible de remplacer le sirop de sucre par du sirop de vanille ou de cerise selon vos goûts. Afin de garantir l''excellence, optez pour une vodka et un café de qualité supérieure. Il est également possible d''utiliser une liqueur de café aromatisée telle que la Patron Incendio, qui ajoutera un côté épicé et légèrement piquant. ', 'L''Espresso Martini a été inventé par Dick Bradsell, un célèbre barman britannique souvent surnommé le "parrain de la scène cocktail londonienne". La création a eu lieu au Fred''s Bar à Soho, Londres, où Bradsell travaillait à l''époque, en 1983. Selon la légende, une jeune femme (souvent identifiée comme un mannequin célèbre) est entrée dans le bar et a demandé un cocktail qui "me réveillera, puis me cassera" (en anglais : "wake me up, then fuck me up").', 'expresso_martini_cocktail.webp', 'Mettre des glaçons dans le verre pour le rafraîchir (il est également possible de garder ses verres au réfrigérateur quelques minutes avant).', 'Dans le shaker, ajouter tous les ingrédients en terminant par le café.', 'Ajouter de la glace dans le shaker et shaker énergiquement.', 'Enlever les glaçons du verre et passer le cocktail dans le verre en utilisant une passoire supplémentaire pour récupérer les petits morceaux de glace qui se sont cassés dans le shaker.', 'Décorer avec 3 petits grains de café.', 'Déguster.',1,1,1),
-('Dark & Stormy', 'Le Dark and Stormy est un cocktail rafraîchissant qui marie la chaleur du rhum avec le piquant du gingembre. Ce mélange audacieux est composé de rhum noir, du soda au gingembre (ginger beer) et d’un trait de jus de citron vert, le tout servi sur glace. Le rhum noir, avec ses notes riches et profondes, contraste parfaitement avec la légèreté épicée du sosa au gingembre, tandis que le citron vert ajoute une touche d''acidité vivifiante. Ce cocktail se distingue par sa couleur sombre, provenant du rhum, qui se dégrade en un dégradé doré avec la bière au gingembre, évoquant une tempête tumultueuse en mer.', 'Aux États-Unis, la marque Gosling''s a déposé le nom "Dark n'' Stormy", ce qui signifie que le cocktail ne peut être vendu sous ce nom là-bas que lorsqu''il est préparé avec le rhum Gosling''s Black Seal. Ainsi, toute variante utilisant un autre rhum doit être appelée autrement.', 'Le Dark and Stormy trouve ses origines dans les Bermudes, où il est né au début du XXe siècle. Ce cocktail est devenu emblématique grâce à la marque de rhum noir Gosling''s, qui revendique la paternité de la recette. Selon la légende, le cocktail a été créé par des marins britanniques qui, en mélangeant du rhum noir avec de la bière au gingembre, ont vu une similitude entre la boisson et les tempêtes violentes qu''ils affrontaient en mer, d''où le nom évocateur. Au fil des années, le Dark and Stormy a gagné en popularité au-delà des Bermudes et est devenu un classique apprécié dans le monde entier pour son goût rafraîchissant et sa facilité de préparation.', 'dark_and_stormy_cocktail.webp', 'Remplir le verre de glace.', 'Presser le jus de citron vert au dessus du verre et verser le ginger beer.', 'Ajouter de la glace si nécessaire.', 'En top, à l''aide de la bar spoon, verser le rhum au-dessus afin qu''il reste en surface.', 'Mélanger légèrement pour créer l''effet "stormy".', 'Déguster.', 6, 5, 3);
+('Dark & Stormy', 'Le Dark and Stormy est un cocktail rafraîchissant qui marie la chaleur du rhum avec le piquant du gingembre. Ce mélange audacieux est composé de rhum noir, du soda au gingembre (ginger beer) et d’un trait de jus de citron vert, le tout servi sur glace. Le rhum noir, avec ses notes riches et profondes, contraste parfaitement avec la légèreté épicée du sosa au gingembre, tandis que le citron vert ajoute une touche d''acidité vivifiante. Ce cocktail se distingue par sa couleur sombre, provenant du rhum, qui se dégrade en un dégradé doré avec la bière au gingembre, évoquant une tempête tumultueuse en mer.', 'Aux États-Unis, la marque Gosling''s a déposé le nom "Dark n'' Stormy", ce qui signifie que le cocktail ne peut être vendu sous ce nom là-bas que lorsqu''il est préparé avec le rhum Gosling''s Black Seal. Ainsi, toute variante utilisant un autre rhum doit être appelée autrement.', 'Le Dark and Stormy trouve ses origines dans les Bermudes, où il est né au début du XXe siècle. Ce cocktail est devenu emblématique grâce à la marque de rhum noir Gosling''s, qui revendique la paternité de la recette. Selon la légende, le cocktail a été créé par des marins britanniques qui, en mélangeant du rhum noir avec de la bière au gingembre, ont vu une similitude entre la boisson et les tempêtes violentes qu''ils affrontaient en mer, d''où le nom évocateur. Au fil des années, le Dark and Stormy a gagné en popularité au-delà des Bermudes et est devenu un classique apprécié dans le monde entier pour son goût rafraîchissant et sa facilité de préparation.', 'dark_and_stormy_cocktail.webp', 'Remplir le verre de glace.', 'Presser le jus de citron vert au dessus du verre et verser le ginger beer.', 'Ajouter de la glace si nécessaire.', 'En top, à l''aide de la bar spoon, verser le rhum au-dessus afin qu''il reste en surface.', 'Mélanger légèrement pour créer l''effet "stormy".', 'Déguster.', 6, 5, 3),
+('Gin basil smash', 'Le Gin Basil Smash est un cocktail rafraîchissant et aromatique qui marie la fraîcheur du basilic avec la complexité du gin. Ce mélange équilibré est composé de gin, de jus de citron frais, de sirop de sucre et de feuilles de basilic, créant une boisson vibrante et herbacée. Le Gin Basil Smash est souvent servi dans un verre old fashioned sur glace, garni de feuilles de basilic pour une touche de fraîcheur et de couleur.', 'Pour une version plus épicée, ajoutez quelques grains de poivre noir ou de piment. Il est également possible d''utiliser différents types de basilic : le basilic thaï pour un cocktail plus épicé, le basilic citronné pour une fraîcheur accrue, ou encore le basilic rouge pour une magnifique couleur pourpre.', 'Le Gin Basil Smash a été inventé par le barman allemand Jörg Meyer en 2008, au Le Lion Bar de Hambourg. Meyer a créé le cocktail en utilisant des ingrédients simples et de qualité pour mettre en valeur la saveur du gin et du basilic. Depuis sa création, le Gin Basil Smash est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour sa fraîcheur et sa simplicité.', 'gin_basil_smash_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Mettre le basilic dans le shaker et piler énergiquement pour extraire tout son arôme.', 'Ajouter les autres ingrédients.', 'Ajouter de la glace et shaker de façon énergique.', 'Filtrer le mélange dans le verre à l''aide d''une passoire.', 'Ajouter une feuille de basilic sur le dessus du verre et déguster.',  1, 7, 2),
+('Bourbon old fashioned', 'Le Old Fashioned est un cocktail classique et intemporel qui met en valeur la richesse et la complexité du bourbon. Ce mélange simple et élégant est composé de bourbon, de sucre, d''Angostura bitters et d''un zeste d''orange, créant une boisson riche et équilibrée. Le Old Fashioned est souvent servi dans un verre old fashioned sur glace, garni d''un zeste d''orange pour une touche d''acidité et de fraîcheur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Il est également possible de remplacer le bourbon par du whisky, du rye whiskey ou du brandy pour une variante différente. Il est également possible de remplacer le classique Angostura bitters par un bitters au café, à la cerise, au chocolat, ou même pimenté, selon vos préférences.  Si vous ne réalisez qu''un cocktail, vous pouvez le préparer directement dans le verre de service en ajoutant les glaçons au fur et à mesure afin de diluer le cocktail.', 'Le Old Fashioned est l''un des cocktails les plus anciens et les plus célèbres de l''histoire, remontant au début du XIXe siècle. Il est considéré comme le premier cocktail "moderne" et a été créé à l''origine avec du sucre, de l''eau-de-vie, de l''eau et des bitters. La recette a évolué pour inclure du bourbon ou d''autres spiritueux, mais l''esprit du Old Fashioned reste le même : un cocktail simple, élégant et délicieux.', 'old_fashioned_cocktail.webp', 'Remplir de glace le verre à mélange et le verre de dégustation.', 'Ajouter les ingrédients dans le verre à mélange.', 'Mélanger pendant environ deux minutes pour diluer le cocktail.', 'Passer le cocktail dans le verre de dégustation.', 'Zester un zeste d''orange et l’exprimer (appuyer dessus pour extraire les huiles essentielles).', 'Déguster.', 2, 12, 2);
 
 INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktails classiques sont les recettes traditionnelles et intemporelles qui ont souvent été créées dans les années 1800 et au début des années 1900. Exemples: Martini, Old Fashioned, Manhattan, Negroni, Margarita.'),
 ('Sour', 'Les cocktails sour se caractérisent par une combinaison d''un spiritueux, de jus de citron ou de lime, et de sucre. Réalisé au shaker. Ils peuvent également inclure un blanc d''œuf pour une texture plus soyeuse. Exemples: Whiskey Sour, Pisco Sour, Amaretto Sour, Margarita, Daiquiri.'),
@@ -121,6 +124,7 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit"
 (2, 19, 60, 'ml'),
 (2, 37, 120, 'ml'),
 (2, 39, 20, 'ml'),
+(2, 43, 1, 'rondelle'),
 (3, 45, 1,'tranche'),
 (3, 4, 50, 'ml'),
 (3, 24, 120, 'ml'),
@@ -131,7 +135,15 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit"
 (4, 16, 5, 'ml'),
 (5, 4, 50, 'ml'),
 (5, 29, 20, 'ml'),
-(5, 32, 100, 'ml');
+(5, 32, 100, 'ml'),
+(6, 46, 8, 'feuilles'),
+(6, 2, 50, 'ml'),
+(6, 29, 20, 'ml'),
+(6, 16, 15, 'ml'),
+(7, 9, 60, 'ml'),
+(7, 16, 20, 'ml'),
+(7, 20, 6, 'traits'),
+(7, 43, 1, 'zeste');
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1, 2),
@@ -147,7 +159,17 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (4, 6),
 (5, 2),
 (5, 6),
-(5, 7);
+(5, 7),
+(6, 1),
+(6, 4),
+(6, 5),
+(6, 6),
+(6, 7),
+(6, 8),
+(7, 2),
+(7, 3),
+(7, 4),
+(7, 6);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (1, 2),
@@ -157,6 +179,8 @@ INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (3, 1),
 (3, 6),
 (4, 8),
-(5, 5);
+(5, 5),
+(6, 2),
+(7, 1);
 
 COMMIT;
