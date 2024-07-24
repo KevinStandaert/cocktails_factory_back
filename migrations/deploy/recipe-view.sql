@@ -7,7 +7,7 @@ CREATE OR REPLACE VIEW "recipe_view_all" AS
 WITH ingredient_info AS (
     SELECT
         "recipe_id",
-        json_agg(json_build_object('name', "ingredient"."name", 'quantity', "recipe_ingredient"."quantity") ORDER BY "ingredient"."name") AS "ingredients"
+        json_agg(json_build_object('name', "ingredient"."name", 'quantity', "recipe_ingredient"."quantity", 'unit', "recipe_ingredient"."unit") ORDER BY "ingredient"."name") AS "ingredients"
     FROM
         "recipe_ingredient"
     JOIN

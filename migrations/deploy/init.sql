@@ -78,6 +78,7 @@ CREATE TABLE "recipe_ingredient" (
   "recipe_id" int NOT NULL REFERENCES "recipe" ("id"),
   "ingredient_id" int NOT NULL REFERENCES "ingredient" ("id"),
   "quantity" int NOT NULL,
+  "unit" varchar(50) NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT now(),
   "updated_at" timestamptz,
   UNIQUE ("recipe_id", "ingredient_id")

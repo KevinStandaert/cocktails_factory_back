@@ -75,7 +75,7 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Jus de fruits de la passion', 'Jus de fruits de la passion.', 'Jus_de_fruits_de_la_passion.webp'),
 ('Jus de citron vert', 'Jus extrait du lime, souvent utilisé pour son acidité vive et son goût légèrement amer.', 'jus_de_citron_vert.webp'),
 ('Citron vert', 'Citron vert', 'citron_vert.webp'),
-('Feuille de menthe', 'Feuille de menthe', 'feuille_de_menthe.webp'),
+('Menthe', 'Feuille de menthe', 'feuille_de_menthe.webp'),
 ('Ginger beer', 'Soda sans alcool pétillant au goût de gingembre prononcé.', 'ginger_beer.webp'),
 ('Lait de coco', 'Liquide crémeux extrait de la chair de noix de coco.', 'lait_de_coco.webp'),
 ('Blanc d''oeuf', 'Blanc d''oeuf.', 'blanc_d_oeuf.webp'),('Aquafaba', 'Jus de cuisson ou liquide de conservation des pois chiche.', 'aquafaba.webp'),
@@ -88,7 +88,8 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Vermouth dry', 'Vin fortifié aromatisé avec des herbes et des épices, souvent sec.', 'vermouth_dry.webp'),
 ('Rondelle d''orange', 'Rondelle d''orange.', 'rondelle_d_orange.webp'),
 ('Tonic', 'Boisson gazeuse contenant de la quinine ce qui donne un goût lègèrement amer.', 'tonic.webp'),
-('Tranche Ananas frais', 'Ananas frais.', 'tranche_ananas_frais.webp');
+('Ananas frais', 'Ananas frais.', 'tranche_ananas_frais.webp'),
+('Basilic', 'Feuille de basilic.', 'feuille_de_basilic.webp');
 
 INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel. Pour un goût plus délicat, privilégiez une tequila reposado ou añejo.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
 ('Italian spritz', 'Il se compose principalement de trois ingrédients : Prosecco, Aperol (ou parfois Campari) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement amère et rafraîchissante, souvent servie avec une tranche d''orange. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
@@ -110,16 +111,16 @@ INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktai
 ('Low', 'Les cocktails légers en alcool utilisent des ingrédients à faible teneur en alcool, parfaits pour ceux qui souhaitent une boisson plus légère. Exemples: Spritz, Americano, Sherry Cobbler, Vermouth and Soda, Aperol Spritz.'),
 ('Punch', 'Les punchs sont des boissons préparées en grande quantité et servies dans un bol à punch. Ils peuvent être à base de rhum, de vin, ou d''autres spiritueux, et sont souvent accompagnés de fruits et d''épices. Exemples: Sangria, Planter''s Punch, Rum Punch, Pimm''s Cup, Holiday Punch.');
 
-INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity") VALUES (1, 5, 50),
-(1, 12, 25),
-(1, 29, 25),
-(2, 19, 60),
-(2, 37, 120),
-(2, 39, 20),
-(3, 45, 1),
-(3, 4, 50),
-(3, 24, 120),
-(3, 33, 50);
+INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit") VALUES (1, 5, 50,'ml'),
+(1, 12, 25, 'ml'),
+(1, 29, 25, 'ml'),
+(2, 19, 60, 'ml'),
+(2, 37, 120, 'ml'),
+(2, 39, 20, 'ml'),
+(3, 45, 1,'tranche'),
+(3, 4, 50, 'ml'),
+(3, 24, 120, 'ml'),
+(3, 33, 50, 'ml');
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1,2),

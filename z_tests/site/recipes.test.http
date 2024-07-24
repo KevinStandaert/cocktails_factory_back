@@ -4,13 +4,13 @@
 GET {{endpoint}}/recipes
 
 ### getOneRecipeById
-GET {{endpoint}}/recipes/5
+GET {{endpoint}}/recipes/3
 
 ### getAllRecipesByCards
 GET {{endpoint}}/recipes/cards
 
 ### getOneRecipeByCards
-GET {{endpoint}}/recipes/cards/7
+GET {{endpoint}}/recipes/cards/3
 
 
 ### getRecipesRandomly
