@@ -72,7 +72,7 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Liqueur de fleurs de sureau', 'Liqueur à base de fleurs de sureau. La plus connue étant le Saint Germain.', 'liqueur_de_fleurs_de_sureau.webp'),
 ('Jus d''ananas', 'Jus d''ananas.', 'jus_d_ananas.webp'),
 ('Jus de cranberry', 'Jus de cranberry.', 'jus_de_cranberry.webp'),
-('Jus de fruits de la passion', 'Jus de fruits de la passion.', 'Jus_de_fruits_de_la_passion.webp'),
+('Compote de poire', 'Compote de poire.', 'compote_poire.webp'),
 ('Jus de citron', 'Jus extrait du citron, utilisé pour ajouter une acidité et un éclat de saveur.', 'jus_de_citron.webp'),
 ('Jus de fruits de la passion', 'Jus de fruits de la passion.', 'Jus_de_fruits_de_la_passion.webp'),
 ('Jus de citron vert', 'Jus extrait du lime, souvent utilisé pour son acidité vive et son goût légèrement amer.', 'jus_de_citron_vert.webp'),
@@ -92,7 +92,12 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('orange', 'orange.', 'orange.webp'),
 ('Tonic', 'Boisson gazeuse contenant de la quinine ce qui donne un goût lègèrement amer.', 'tonic.webp'),
 ('Ananas frais', 'Ananas frais.', 'tranche_ananas_frais.webp'),
-('Basilic', 'Feuille de basilic.', 'feuille_de_basilic.webp');
+('Basilic', 'Feuille de basilic.', 'feuille_de_basilic.webp'),
+('Thé baby boom', 'Infusion fenouil, anis et badiane', 'the_baby_boom.webp'),
+('Vodka au safran', 'Vodka infusée au safran', 'vodka_safran.webp'),
+('Sirop de cannelle', 'sirop à la cannelle', 'sirop_cannelle.webp'),
+('Pêche fraiche', 'pêche fraiche', 'peche.webp'),
+('Jus de pêche', 'Jus de pêche', 'jus_peche.webp');
 
 INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel. Pour un goût plus délicat, privilégiez une tequila reposado ou añejo.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
 ('Italian spritz', 'Il se compose principalement de trois ingrédients : Prosecco, Aperol (ou parfois Campari) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement amère et rafraîchissante, souvent servie avec une tranche d''orange. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
@@ -102,7 +107,19 @@ Il est possible de remplacer l''Aperol par d''autres liqueurs : le Saint Germain
 ('Dark & Stormy', 'Le Dark and Stormy est un cocktail rafraîchissant qui marie la chaleur du rhum avec le piquant du gingembre. Ce mélange audacieux est composé de rhum noir, du soda au gingembre (ginger beer) et d’un trait de jus de citron vert, le tout servi sur glace. Le rhum noir, avec ses notes riches et profondes, contraste parfaitement avec la légèreté épicée du sosa au gingembre, tandis que le citron vert ajoute une touche d''acidité vivifiante. Ce cocktail se distingue par sa couleur sombre, provenant du rhum, qui se dégrade en un dégradé doré avec la bière au gingembre, évoquant une tempête tumultueuse en mer.', 'Aux États-Unis, la marque Gosling''s a déposé le nom "Dark n'' Stormy", ce qui signifie que le cocktail ne peut être vendu sous ce nom là-bas que lorsqu''il est préparé avec le rhum Gosling''s Black Seal. Ainsi, toute variante utilisant un autre rhum doit être appelée autrement.', 'Le Dark and Stormy trouve ses origines dans les Bermudes, où il est né au début du XXe siècle. Ce cocktail est devenu emblématique grâce à la marque de rhum noir Gosling''s, qui revendique la paternité de la recette. Selon la légende, le cocktail a été créé par des marins britanniques qui, en mélangeant du rhum noir avec de la bière au gingembre, ont vu une similitude entre la boisson et les tempêtes violentes qu''ils affrontaient en mer, d''où le nom évocateur. Au fil des années, le Dark and Stormy a gagné en popularité au-delà des Bermudes et est devenu un classique apprécié dans le monde entier pour son goût rafraîchissant et sa facilité de préparation.', 'dark_and_stormy_cocktail.webp', 'Remplir le verre de glace.', 'Presser le jus de citron vert au dessus du verre et verser le ginger beer.', 'Ajouter de la glace si nécessaire.', 'En top, à l''aide de la bar spoon, verser le rhum au-dessus afin qu''il reste en surface.', 'Mélanger légèrement pour créer l''effet "stormy".', 'Déguster.', 6, 5, 3),
 ('Gin basil smash', 'Le Gin Basil Smash est un cocktail rafraîchissant et aromatique qui marie la fraîcheur du basilic avec la complexité du gin. Ce mélange équilibré est composé de gin, de jus de citron frais, de sirop de sucre et de feuilles de basilic, créant une boisson vibrante et herbacée. Le Gin Basil Smash est souvent servi dans un verre old fashioned sur glace, garni de feuilles de basilic pour une touche de fraîcheur et de couleur.', 'Pour une version plus épicée, ajoutez quelques grains de poivre noir ou de piment. Il est également possible d''utiliser différents types de basilic : le basilic thaï pour un cocktail plus épicé, le basilic citronné pour une fraîcheur accrue, ou encore le basilic rouge pour une magnifique couleur pourpre.', 'Le Gin Basil Smash a été inventé par le barman allemand Jörg Meyer en 2008, au Le Lion Bar de Hambourg. Meyer a créé le cocktail en utilisant des ingrédients simples et de qualité pour mettre en valeur la saveur du gin et du basilic. Depuis sa création, le Gin Basil Smash est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour sa fraîcheur et sa simplicité.', 'gin_basil_smash_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Mettre le basilic dans le shaker et piler énergiquement pour extraire tout son arôme.', 'Ajouter les autres ingrédients.', 'Ajouter de la glace et shaker de façon énergique.', 'Filtrer le mélange dans le verre à l''aide d''une passoire.', 'Ajouter une feuille de basilic sur le dessus du verre et déguster.',  1, 7, 2),
 ('Bourbon old fashioned', 'Le Old Fashioned est un cocktail classique et intemporel qui met en valeur la richesse et la complexité du bourbon. Ce mélange simple et élégant est composé de bourbon, de sucre, d''Angostura bitters et d''un zeste d''orange, créant une boisson riche et équilibrée. Le Old Fashioned est souvent servi dans un verre old fashioned sur glace, garni d''un zeste d''orange pour une touche d''acidité et de fraîcheur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Il est également possible de remplacer le bourbon par du whisky, du rye whiskey ou du brandy pour une variante différente. Il est également possible de remplacer le classique Angostura bitters par un bitters au café, à la cerise, au chocolat, ou même pimenté, selon vos préférences.  Si vous ne réalisez qu''un cocktail, vous pouvez le préparer directement dans le verre de service en ajoutant les glaçons au fur et à mesure afin de diluer le cocktail.', 'Le Old Fashioned est l''un des cocktails les plus anciens et les plus célèbres de l''histoire, remontant au début du XIXe siècle. Il est considéré comme le premier cocktail "moderne" et a été créé à l''origine avec du sucre, de l''eau-de-vie, de l''eau et des bitters. La recette a évolué pour inclure du bourbon ou d''autres spiritueux, mais l''esprit du Old Fashioned reste le même : un cocktail simple, élégant et délicieux.', 'old_fashioned_cocktail.webp', 'Remplir de glace le verre à mélange et le verre de dégustation.', 'Ajouter les ingrédients dans le verre à mélange.', 'Mélanger pendant environ deux minutes pour diluer le cocktail.', 'Passer le cocktail dans le verre de dégustation.', 'Zester un zeste d''orange et l’exprimer (appuyer dessus pour extraire les huiles essentielles).', 'Déguster.', 2, 12, 2),
-('Negroni', 'Le Negroni est un cocktail italien classique et sophistiqué qui marie l''amertume du Campari avec la douceur du vermouth rouge et la force du gin. Ce mélange équilibré est composé de gin, de vermouth rouge et de Campari, créant une boisson complexe et riche en saveurs. Le Negroni est souvent servi dans un verre old fashioned sur glace, garni d''une tranche d''orange pour une touche de fraîcheur et de couleur.', 'Pour une version plus douce, remplacez le Campari par de l''Aperol. Pour une version plus amère, remplacez le Campari par du Fernet Branca. Il est également possible de remplacer le gin par du bourbon pour faire un Boulevardier', 'Le Negroni a été inventé en 1919 à Florence, en Italie, par le comte Camillo Negroni. L''histoire raconte que le comte, un habitué du Caffè Casoni, a demandé au barman de renforcer son cocktail Americano en remplaçant l''eau gazeuse par du gin. Le barman a ajouté une tranche d''orange pour décorer le verre, et le Negroni est né. Depuis lors, le Negroni est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour son équilibre et sa complexité.', 'negroni_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser le gin, le vermouth rouge et le Campari dans le verre.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter une tranche d''orange.', 'Ajouter de la glace si nécessaire.', 'Déguster.', 6, 4, 2);
+('Negroni', 'Le Negroni est un cocktail italien classique et sophistiqué qui marie l''amertume du Campari avec la douceur du vermouth rouge et la force du gin. Ce mélange équilibré est composé de gin, de vermouth rouge et de Campari, créant une boisson complexe et riche en saveurs. Le Negroni est souvent servi dans un verre old fashioned sur glace, garni d''une tranche d''orange pour une touche de fraîcheur et de couleur.', 'Pour une version plus douce, remplacez le Campari par de l''Aperol. Pour une version plus amère, remplacez le Campari par du Fernet Branca. Il est également possible de remplacer le gin par du bourbon pour faire un Boulevardier', 'Le Negroni a été inventé en 1919 à Florence, en Italie, par le comte Camillo Negroni. L''histoire raconte que le comte, un habitué du Caffè Casoni, a demandé au barman de renforcer son cocktail Americano en remplaçant l''eau gazeuse par du gin. Le barman a ajouté une tranche d''orange pour décorer le verre, et le Negroni est né. Depuis lors, le Negroni est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour son équilibre et sa complexité.', 'negroni_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser le gin, le vermouth rouge et le Campari dans le verre.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter une tranche d''orange.', 'Ajouter de la glace si nécessaire.', 'Déguster.', 6, 4, 2),
+('Amaretto sour', 'L''Amaretto Sour est un cocktail sucré et acidulé qui marie la douceur de l''amaretto avec l''acidité du citron. Ce mélange équilibré est composé d''amaretto, de jus de citron frais, de sirop de sucre et de blanc d''œuf, créant une boisson crémeuse et rafraîchissante. L''Amaretto Sour est souvent servi dans un verre old fashioned sur glace, garni d''une cerise au marasquin pour une touche de couleur et de douceur.', 'Pour une version plus douce, ajoutez un peu de sirop de sucre supplémentaire. Pour une version plus acidulée, ajoutez un peu plus de jus de citron. Il est également possible de remplacer le blanc d''œuf par de l''aquafaba pour une version végétalienne. Les "sours" sont une grande famille de cocktails. Il est possible de remplacer l''amaretto par du whisky, du pisco, du bourbon, etc.', 'L''Amaretto Sour est un cocktail classique qui a été créé dans les années 1970. Il est devenu populaire dans les bars et les discothèques de l''époque pour son goût sucré et acidulé, qui était apprécié par les amateurs de cocktails. Depuis lors, l''Amaretto Sour est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour sa simplicité et sa délicieuse combinaison de saveurs.', 'amaretto_sour_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser les ingédients dans le shaker.', 'Shaker vigoureusement sans glace pour bien mélanger et émulsionner les ingrédients.','Saker une seconde fois avec de la glace', 'Filtrer le mélange dans le verre.', 'Déguster.', 1, 1, 2),
+('Aqua vitae', 'Ce cocktail sophistiqué allie des saveurs exotiques et épicées pour offrir une expérience gustative unique. Confectionné avec une vodka infusé au safran, il se distingue par son arôme délicat et sa belle couleur dorée. L''amertume subtile de l''Angostura se marie parfaitement avec la douceur du sirop de cannelle, tandis que l''aquafaba apporte une texture soyeuse et un aspect mousseux attrayant. Le jus de citron ajoute une touche de fraîcheur et d''acidité qui équilibre les saveurs. Le thé Baby Boom, une infusion d''anis, fenouil et badiane, complète le mélange avec des notes légèrement réglissées et herbacées, apportant une complexité supplémentaire au cocktail.', 'Pour obtenir la vodka au safran, il faut infuser 1 gramme de pistilles de safran dans 70 cl de vodka pendant 48 heures. Il est impératif de choisir une vodka de qualité, comme la vodka française Grey Goose, la vodka polonaise Belvedere ou la vodka russe Beluga. Pour l''infusion baby boom, il faut la faire infuser et attendre qu''elle refroidisse avant de l''utiliser.', 'Ce cocktail a été conçu pour capturer et recréer les arômes distincts de l''eau-de-vie scandinave "aquavit", qui reste assez méconnue chez nous. En mélangeant des ingrédients soigneusement sélectionnés, ce cocktail offre une alliance harmonieuse de saveurs subtiles et de fraîcheur. L''objectif était de rendre hommage aux caractéristiques uniques de l''aquavit tout en proposant une boisson rafraîchissante et accessible, capable de séduire les palais les plus exigeants.', 'aqua_vitae_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser les ingrédients dans le shaker.', 'Shaker vigoureusement sans glace pour bien mélanger et émulsionner les ingrédients.','Saker une seconde fois avec de la glace', 'Filtrer le mélange dans le verre.', 'Déguster.', 1, 5, 2),
+('Mojito', 'Le Mojito est un cocktail rafraîchissant et pétillant qui marie la fraîcheur de la menthe avec l''acidité du citron vert et la douceur du sucre. Ce mélange équilibré est composé de rhum, de menthe fraîche, de sucre, de citron vert et d''eau gazeuse, créant une boisson vivifiante et herbacée. Le Mojito est souvent servi dans un verre highball sur glace pilée, garni de feuilles de menthe pour une touche de fraîcheur et de couleur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Pour une version plus acidulée, ajoutez un peu plus de jus de citron vert. Il est également possible de remplacer le sirop de sucre par du sucre en grains pour plus de gourmandise. Si vous aimez l''amertume vous pouvez ajouter deux traits d''Angostura bitters. Il est préférable de choisir un rhum cubain pour respecter la recette d''origine.', 'Le Mojito est un cocktail cubain classique qui a été créé au 16e siècle. Il est devenu populaire dans les bars et les restaurants de La Havane pour son goût rafraîchissant et sa simplicité. Depuis lors, le Mojito est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour sa fraîcheur et sa vivacité.', 'mojito_cocktail.webp', 'Mettre les feuilles de menthe dans le verre et les piler sans les broyer pour garder la menthe entière et libérer les arômes.', 'Remplir la moitié du verre avec de la glace pilée.', 'Ajouter le rhum, le jus de citron vert, le sirop de sucre et mélanger de bas en haut.', 'Remplir le verre de glace pilée et compléter d''eau gazeuse.', 'Mélanger une dernière fois.', 'Déguster.', 3, 3, 3),
+('Daiquiri pêche frozen', 'Le Daiquiri est un cocktail classique et rafraîchissant qui marie la douceur de la pêche avec l''acidité du citron vert et la force du rhum. Ce mélange équilibré est composé de rhum, de pêche fraiche, de jus de citron vert et de glace pilée, créant une boisson crémeuse et rafraîchissante. Le Daiquiri est souvent servi dans un verre à cocktail garni d''une tranche de pêche pour une touche de fraîcheur et de couleur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Pour une version plus acidulée, ajoutez un peu plus de jus de citron vert. Il est également possible de remplacer la pêche par vos fruits préférés', 'Le Daiquiri est un cocktail cubain classique qui a été créé au 19e siècle. Il est devenu populaire dans les bars et les restaurants de La Havane pour son goût rafraîchissant et sa simplicité. Depuis lors, le Daiquiri est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour sa fraîcheur et sa vivacité.', 'daiquiri_peche_frozen_cocktail.webp', 'Éplucher et découper la pêche en morceaux.', 'Mettre tous les ingrédients dans le blender.', 'Ajouter de la glace pilée jusqu''à hauteur.', 'Mixer pour obtenir une texture lisse et homogène.','Verser dans le verre.', 'Déguster.', 4, 6, 1),
+('Spritz hugo', 'Il se compose principalement de trois ingrédients : Prosecco, liqueur de fleurs de sureau (par exemple Saint Germain) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement florale et rafraîchissante, souvent servie avec une tranche de citron vert et de la menthe. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
+Il est possible de remplacer la liqueur de fleurs de sureau par d''autres liqueurs : l''aperol pour une légère amertume, le Campari pour une amertume encore plus prononcée, le Limoncello pour une note citronnée, ou la liqueur de framboise pour un goût très fruité. La seule limite est votre imagination!', 'Le Spritz Hugo a été créé par l''hôtelière et restauratrice tirolienne, Roland Gruber, dans la région de Trentin-Haut-Adige, en Italie du Nord, vers la fin des années 2000. Ce cocktail a été conçu pour offrir une alternative rafraîchissante au Spritz classique, en mettant en avant des saveurs plus florales et herbacées. Le nom "Hugo" a été choisi en l''honneur d''un ami du créateur, et le cocktail a rapidement gagné en popularité grâce à son goût rafraîchissant et sa présentation attrayante. Il est souvent servi dans un grand verre à vin ou un verre à cocktail avec beaucoup de glace, et décoré de feuilles de menthe et de tranches de lime. Le succès du Spritz Hugo a contribué à la popularisation des cocktails à base de fleurs de sureau dans le monde entier, et il est devenu un choix populaire lors des apéritifs et des événements estivaux.', 'spritz_hugo_cocktail.webp', 'Remplir le verre avec de gros glaçons.', 'Verser la liqueur, le Prosecco (de préférence extra dry pour ne pas ajouter trop de sucre) et l''eau gazeuse.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter les quartiers de citron vert et la menthe', 'Rajouter de la glace si nécessaire', 'Déguster', 2, 8, 5),
+('Tiki pear', 'Les cocktails tiki sont des boissons tropicales souvent élaborées avec plusieurs types de rhum, des jus de fruits, des sirops et des bitters, et servis dans des verres ou mugs décoratifs. Les cocktails tiki sont connus pour leurs saveurs complexes et exotiques, leurs couleurs vives et leurs décorations extravagantes. Ils sont souvent garnis de fruits frais, de parasols, de pailles colorées et de décorations en forme de palmiers ou de fleurs. Les cocktails tiki sont parfaits pour les fêtes estivales, les barbecues en plein air et les soirées à thème hawaïen.', 'Pour une version plus épicée, ajoutez des épices comme la cannelle, le gingembre ou le piment. Il est également possible de remplacer le rhum par de la tequila, de la vodka ou du gin pour des variantes intéressantes.', 'Les cocktails tiki ont été créés dans les années 1930 par le barman américain Donn Beach, également connu sous le nom de Don the Beachcomber. Beach a ouvert le premier bar tiki à Hollywood, en Californie, où il a inventé des recettes de cocktails exotiques inspirées des saveurs des îles du Pacifique. Les cocktails tiki sont devenus populaires dans les années 1940 et 1950, grâce à leur mélange de saveurs tropicales, de rhum et de décoration thématique. Depuis lors, les cocktails tiki sont devenus un classique de la scène cocktail internationale, appréciés pour leur exotisme et leur originalité.', 'tiki_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser les ingrédients dans le shaker.', 'Shaker vigoureusement avec de la glace.', 'Filtrer le mélange dans le verre.', 'Décorer avec des fruits frais, des parasols et des pailles colorées.', 'Déguster.', 1, 6, 12);
+
+
+
+
+
 
 
 INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktails classiques sont les recettes traditionnelles et intemporelles qui ont souvent été créées dans les années 1800 et au début des années 1900. Exemples: Martini, Old Fashioned, Manhattan, Negroni, Margarita.'),
@@ -118,7 +135,10 @@ INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktai
 ('Bière', 'Les cocktails à base de bière combinent de la bière avec d''autres spiritueux, liqueurs ou jus de fruits. Exemples: Michelada, Black Velvet, Shandy, Beer Margarita, Snakebite.'),
 ('Chaud', 'Les cocktails chauds sont des boissons servies chaudes, souvent associées à l''hiver et aux fêtes de fin d''année. Exemples: Irish Coffee, Hot Toddy, Mulled Wine, Hot Buttered Rum, Spiked Hot Chocolate.'),
 ('Low', 'Les cocktails légers en alcool utilisent des ingrédients à faible teneur en alcool, parfaits pour ceux qui souhaitent une boisson plus légère. Exemples: Spritz, Americano, Sherry Cobbler, Vermouth and Soda, Aperol Spritz.'),
-('Punch', 'Les punchs sont des boissons préparées en grande quantité et servies dans un bol à punch. Ils peuvent être à base de rhum, de vin, ou d''autres spiritueux, et sont souvent accompagnés de fruits et d''épices. Exemples: Sangria, Planter''s Punch, Rum Punch, Pimm''s Cup, Holiday Punch.');
+('Punch', 'Les punchs sont des boissons préparées en grande quantité et servies dans un bol à punch. Ils peuvent être à base de rhum, de vin, ou d''autres spiritueux, et sont souvent accompagnés de fruits et d''épices. Exemples: Sangria, Planter''s Punch, Rum Punch, Pimm''s Cup, Holiday Punch.'),
+('Création', 'Les cocktails de création sont des recettes originales et inventives, souvent créées par des mixologues professionnels ou des amateurs passionnés. Exemples: Gin Basil Smash, Penicillin, Paper Plane, Jungle Bird, Trinidad Sour.'),
+('Thé', 'Les cocktails à base de thé utilisent le thé comme ingrédient principal, apportant des saveurs complexes et des arômes subtils.');
+
 
 INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit") VALUES (1, 5, 50,'ml'),
 (1, 12, 25, 'ml'),
@@ -149,7 +169,40 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit"
 (8, 2, 40, 'ml'),
 (8, 21, 40, 'ml'),
 (8, 40, 30, 'ml'),
-(8, 43, 1, 'tranche');
+(8, 43, 1, 'tranche'),
+(9, 13, 50, 'ml'),
+(9, 16, 10, 'ml'),
+(9, 27, 20, 'ml'),
+(9, 35, 20, 'ml'),
+(9, 20, 5, 'traits'),
+(10, 48, 50, 'ml'),
+(10, 49, 10, 'ml'),
+(10, 27, 20, 'ml'),
+(10, 47, 40, 'ml'),
+(10, 35, 20, 'ml'),
+(10, 20, 3, 'traits'),
+(11, 3, 50, 'ml'),
+(11, 29, 20, 'ml'),
+(11, 16, 20, 'ml'),
+(11, 39, 40, 'ml'),
+(11, 31, 8, 'feuilles'),
+(12, 3, 50, 'ml'),
+(12, 29, 20, 'ml'),
+(12, 16, 10, 'ml'),
+(12, 51, 50, 'ml'),
+(12, 50, 1, 'demi'),
+(13, 39, 20, 'ml'),
+(13, 23, 60, 'ml'),
+(13, 37, 120, 'ml'),
+(13, 29, 10, 'ml'),
+(13, 30, 3, 'quartiers'),
+(13, 31, 6, 'feuilles'),
+(14, 4, 50, 'ml'),
+(14, 26, 30, 'ml'),
+(14, 49, 20, 'ml'),
+(14, 29, 30, 'ml'),
+(14, 24, 30, 'ml'),
+(14, 28, 30, 'ml');
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1, 2),
@@ -177,7 +230,23 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (7, 4),
 (7, 6),
 (8, 2),
-(8, 6);
+(8, 6),
+(9, 1),
+(9, 4),
+(9, 6),
+(10, 1),
+(10, 4),
+(10, 6),
+(11, 2),
+(11, 5),
+(11, 6),
+(12, 6),
+(12, 8),
+(13, 2),
+(13, 6),
+(14, 1),
+(14, 4),
+(14, 6);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (1, 2),
@@ -190,6 +259,17 @@ INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (5, 5),
 (6, 2),
 (7, 1),
-(8, 1);
+(8, 1),
+(9, 1),
+(9, 2),
+(10, 14),
+(10, 15),
+(11, 1),
+(12, 9),
+(13, 1),
+(13, 7),
+(13, 12),
+(14, 6),
+(14, 14);
 
 COMMIT;
