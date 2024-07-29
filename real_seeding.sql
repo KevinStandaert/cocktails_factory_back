@@ -104,8 +104,12 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Kiwi frais', 'kiwi frais', 'kiwi.webp'),
 ('Fruit de la passion', 'fruit de la passion', 'fruit_passion.webp'),
 ('Vodka vanille', 'Vodka vanille', 'vodka_vanille.webp'),
-('Cachaça', 'Spiritueux brésilien à base de canne à sucre.', 'cachaca.webp');
-
+('Cachaça', 'Spiritueux brésilien à base de canne à sucre.', 'cachaca.webp'),
+('Cordial verveine thym', 'Cordial verveine thym', 'cordial_verveine_thym.webp'),
+('Lemon Bitters', 'Bitters citron', 'lemon_bitters.webp'),
+('Lemon tonic', 'Tonic au citron', 'lemon_tonic.webp'),
+('Thé vert mangue', 'Thé vert à la mangue', 'the_vert_mangue.webp'),
+('Sirop spicy', 'Sirop spicy monin', 'sirop_spicy.webp');
 
 INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel. Pour un goût plus délicat, privilégiez une tequila reposado ou añejo.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
 ('Italian spritz', 'Il se compose principalement de trois ingrédients : Prosecco, Aperol (ou parfois Campari) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement amère et rafraîchissante, souvent servie avec une tranche d''orange. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
@@ -126,7 +130,16 @@ Il est possible de remplacer la liqueur de fleurs de sureau par d''autres liqueu
 ('Kiwix', 'Le Kiwix est un cocktail rafraîchissant et fruité qui marie la douceur du kiwi avec l''acidité du citron vert et la force du gin. Ce mélange équilibré est composé de gin, de kiwi frais, de jus de citron vert, de sirop de rose et de jus d''aloe vera,' , 'Il est crucial de mixer le cocktail au blender avant de le shaker pour réduire les grains de kiwi, ce qui libérera une délicate note poivrée et ajoutera de la profondeur au goût du mélange. Il est également important d''utiliser du gin Hendrick’s, qui se distingue par son élaboration à base de concombre et de rose, pour enrichir encore davantage le profil aromatique du cocktail.', 'Le Kiwix a été inventé en 2010 par le talentueux barman français Kévin Standaert, alors qu''il travaillait au bar du Wiltcher''s, un prestigieux hôtel de luxe situé à Bruxelles. Cette création a été spécialement élaborée pour marquer la finale du concours Hendrick’s Chimera.', 'kiwix_cocktail.webp', 'Éplucher et découper un kiwi entier.', 'Mettre le kiwi découpé et les autres ingrédients dans le blender.','Mixer jusqu''à obtenir une texture homogène.','Verser la préparation dans un shaker rempli de glace et shaker énergiquement.','Filtrer le mélange dans un verre rempli de glace.','Déguster.', 1, 6, 2),
 ('Porn star martini', 'Le Porn Star Martini se distingue par sa couleur dorée vive et est souvent décoré d''un demi-fruit de la passion en garniture. Sa combinaison de saveurs fruitées et sucrées en fait une option populaire pour ceux qui recherchent une boisson élégante et raffinée.', 'Il est possible de remplacer le shot de champagne par du prosecco ou un autre vin effervescent sec. Pour une touche plus gourmande, vous pouvez caraméliser le fruit de la passion avec un peu de sucre à l''aide d''un chalumeau.', 'Le Porn Star Martini est un cocktail moderne et audacieux, connu pour son goût tropical et sa présentation élégante. Créé au début des années 2000 par le barman britannique Douglas Ankrah, ce cocktail allie la douceur du fruit de la passion à la richesse de la vanille et la complexité du vodka. Le nom Porn Star Martini joue sur un jeu de mots et fait référence au geste de dégustation du fruit de la passion pour accentuer le caractère sensuel et élégant du cocktail, tout en éveillant l''intérêt des amateurs de cocktails.', 'porn_star_martini_cocktail.webp', 'Dans un shaker, vider la moitié d''un fruit de la passion et réserver l''autre moitié pour la dégustation.','Verser les autres ingrédients dans le shaker et shaker vigoureusement avec de la glace.','Filtrer le mélange dans un verre.','Déposer le demi-fruit de la passion sur le cocktail.','Servir avec un shot de champagne.','Boire le shot de champagne en premier pour "rincer les papilles", déguster le cocktail, puis terminer par le fruit de la passion.', 1, 6, 1),
 ('Caipirinha', 'La Caipirinha est un cocktail brésilien classique et rafraîchissant qui marie la douceur de la cachaça avec l''acidité du citron vert et la force du sucre. Ce mélange équilibré est composé de cachaça, de citron vert, de sucre et de glace pilée, créant une boisson vivifiante et acidulée. La Caipirinha est souvent servie dans un verre old fashioned sur glace pilée, garnie de quartiers de citron vert pour une touche de fraîcheur et de couleur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Pour une version plus acidulée, ajoutez un peu plus de jus de citron vert. Il est également possible d''ajouter d''autres fruits pour aromatiser le cocktail, comme la passion, la fraise ou la framboise.', 'La Caipirinha est un cocktail brésilien traditionnel qui a été créé au 19e siècle. Il est devenu populaire dans les bars et les restaurants de Rio de Janeiro pour son goût rafraîchissant et sa simplicité. Depuis lors, la Caipirinha est devenue un cocktail emblématique de la scène cocktail internationale, appréciée pour sa fraîcheur et sa vivacité', 'caipirinha_cocktail.webp', 'Couper le citron vert en quartiers.', 'Mettre les quartiers de citron vert et le sucre dans le verre.', 'Piler pour extraire le jus et les huiles essentielles du citron vert.', 'Remplir le verre de glace pilée.', 'Verser la cachaça sur la glace et mélanger doucement.', 'Ajouter de la glace si nécessaire et déguster', 3, 3, 2),
-('Moscow Mule', 'Le Moscow Mule est un cocktail rafraîchissant et pétillant qui marie la chaleur de la vodka avec le piquant du gingembre et l''acidité du citron vert. Ce mélange équilibré est composé de vodka, de ginger beer et de jus de citron vert, créant une boisson vive et acidulée. Le Moscow Mule est souvent servi dans une tasse en cuivre sur glace pilée, garni d''une tranche de citron vert pour une touche de fraîcheur et de couleur.', 'Vous pouvez remplacer la vodka par du gin pour réaliser un London Mule, ou utiliser de la vodka aromatisée (comme au concombre, à la myrtille ou au piment) pour varier les saveurs. Optez pour une vodka de qualité et un ginger beer au goût intense (comme Fever-Tree) pour garantir un cocktail riche en saveurs.', 'Le Moscow Mule a été inventé dans les années 1940 par John G. Martin, un vendeur de vodka, et Jack Morgan, le propriétaire d''une entreprise de ginger beer, dans le but de promouvoir leurs produits respectifs. Le cocktail a été servi pour la première fois dans une tasse en cuivre, qui est devenue emblématique du Moscow Mule. Depuis lors, le Moscow Mule est devenu un cocktail classique apprécié pour sa simplicité et sa vivacité', 'moscow_mule_cocktail.webp', 'Remplir la tasse en cuivre de glace pour la rafraîchir.', 'Verser la vodka et le jus de citron vert dans la tasse.', 'Remplir la tasse de ginger beer.', 'Ajouter de le glace si nécessaire et mélanger doucement.', 'Ajouter une tranche de citron vert.', 'Déguster.', 6, 5, 9);
+('Moscow Mule', 'Le Moscow Mule est un cocktail rafraîchissant et pétillant qui marie la chaleur de la vodka avec le piquant du gingembre et l''acidité du citron vert. Ce mélange équilibré est composé de vodka, de ginger beer et de jus de citron vert, créant une boisson vive et acidulée. Le Moscow Mule est souvent servi dans une tasse en cuivre sur glace pilée, garni d''une tranche de citron vert pour une touche de fraîcheur et de couleur.', 'Vous pouvez remplacer la vodka par du gin pour réaliser un London Mule, ou utiliser de la vodka aromatisée (comme au concombre, à la myrtille ou au piment) pour varier les saveurs. Optez pour une vodka de qualité et un ginger beer au goût intense (comme Fever-Tree) pour garantir un cocktail riche en saveurs.', 'Le Moscow Mule a été inventé dans les années 1940 par John G. Martin, un vendeur de vodka, et Jack Morgan, le propriétaire d''une entreprise de ginger beer, dans le but de promouvoir leurs produits respectifs. Le cocktail a été servi pour la première fois dans une tasse en cuivre, qui est devenue emblématique du Moscow Mule. Depuis lors, le Moscow Mule est devenu un cocktail classique apprécié pour sa simplicité et sa vivacité', 'moscow_mule_cocktail.webp', 'Remplir la tasse en cuivre de glace pour la rafraîchir.', 'Verser la vodka et le jus de citron vert dans la tasse.', 'Remplir la tasse de ginger beer.', 'Ajouter de le glace si nécessaire et mélanger doucement.', 'Ajouter une tranche de citron vert.', 'Déguster.', 6, 5, 9),
+('Verbena', 'Le Verbena est un cocktail raffiné à base de tequila, combiné avec un cordial de verveine et de thym. Ce mariage d''herbes aromatiques, associé à la vivacité d''un tonic au citron, crée une boisson rafraîchissante et bien équilibrée. Idéal pour des apéritifs originaux, le Verbena est facile à déguster, offrant une expérience gustative unique et sophistiquée.', 'Pour créer le cordial, commencez par infuser 10 grammes de verveine séchée et 4 branches de thym séché dans 50 cl d''eau chauffée à environ 90 degrés Celsius. Maintenez l''infusion pendant environ 10 à 15 minutes pour permettre aux arômes et huiles essentielles des herbes de se libérer pleinement. Ensuite, ajoutez 10 cl de sirop de sucre au mélange infusé, en remuant bien pour que le sucre se dissolve complètement. Filtrez le liquide pour éliminer les résidus de plantes. Le résultat est un cordial parfumé et légèrement sucré, prêt à être utilisé comme base aromatique pour le cocktail Verbena, apportant une touche herbacée et rafraîchissante à chaque gorgée. Pour le tonic au citron, nous vous recommandons le Bitter Lemon de Fever-Tree.', 'Le cocktail Verbena a été conçu par le barman français Kévin Standaert, qui officiait au bar du Noao à Lille. Cette création unique fait partie d''une carte étendue de cocktails innovants, mettant en avant l''utilisation de thés et d''infusions. Le Verbena, en particulier, illustre parfaitement l''art de marier des ingrédients herbacés pour offrir une expérience gustative raffinée et rafraîchissante.', 'verbena_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.','Ajouter tous les ingrédients, en terminant par le tonic.','Mélanger légèrement pour homogénéiser la boisson.','Goûter le cocktail et ajuster l''acidité selon la douceur du cordial.','Ajouter de la glace si nécessaire.','Déguster.', 6, 7, 3),
+('Tiki tea', 'Le Tiki Tea est un cocktail distinctif qui marie habilement du rhum épicé avec un thé à la mangue. Ce mélange innovant se distingue par sa capacité à offrir une richesse et une profondeur de saveurs incomparables. Le thé à la mangue, avec ses notes tropicales et légèrement sucrées, se marie parfaitement avec les épices du rhum, créant ainsi une complexité de goût que les autres boissons ne peuvent égaler. Le résultat est un cocktail aux saveurs exotiques et envoûtantes, qui évoque une escapade dans les tropiques tout en offrant une expérience gustative raffinée et inédite.', 'Il est crucial de respecter le temps d''infusion recommandé pour le thé afin de garantir une saveur optimale. Un dépassement de ce temps peut entraîner le développement de notes d''amertume et de brûlé, ce qui peut nuire à l''équilibre du goût du cocktail. Pour notre part, nous avons choisi le thé TEATAP Mangoustan, qui est un thé vert aromatisé à la mangue et aux fruits de la passion. Ce thé offre un goût délicatement fruité et équilibré, parfait pour compléter notre mélange tout en préservant des saveurs riches et agréables.', 'Le cocktail Tiki tea a été conçu par le barman français Kévin Standaert, qui officiait au bar du Noao à Lille. Cette création unique fait partie d''une carte étendue de cocktails innovants, mettant en avant l''utilisation de thés et d''infusions. Le Tiki tea, en particulier, illustre parfaitement l''art de marier des ingrédients originaux pour offrir une expérience gustative raffinée et rafraîchissante. Pour le sirop épicé, nous utilisons le sirop Monin Spicy.', 'tiki_tea_cocktail.webp', 'Refroidir le verre en le remplissant de glace.','Ajouter tous les ingrédients, en versant le thé en dernier.','Mélanger délicatement pour bien homogénéiser le cocktail.','Ajuster la quantité de citron et/ou de sucre selon votre goût.','Ajouter de la glace supplémentaire si nécessaire.','Déguster', 6, 5, 12);
+
+
+
+
+
+
+
 
 
 
@@ -231,7 +244,18 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit"
 (17, 16, 20, 'ml'),
 (18, 1, 50, 'ml'),
 (18, 32, 100, 'ml'),
-(18, 29, 20, 'ml');
+(18, 29, 20, 'ml'),
+(19, 58, 30, 'ml'),
+(19, 59, 5, 'traits'),
+(19, 60, 100, 'ml'),
+(19, 27, 10, 'ml'),
+(19, 5, 40, 'ml'),
+(20, 5, 40, 'ml'),
+(20, 28, 40, 'ml'),
+(20, 20, 4, 'traits'),
+(20, 29, 20, 'ml'),
+(20, 61, 120, 'ml'),
+(20, 62, 10, 'ml');
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1, 2),
@@ -287,7 +311,11 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (17, 2),
 (17, 5),
 (18, 2),
-(18, 6);
+(18, 6),
+(19, 2),
+(19, 6),
+(20, 2),
+(20, 6);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (1, 2),
@@ -316,6 +344,12 @@ INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (16, 1),
 (16, 7),
 (17, 1),
-(18, 1);
+(18, 1),
+(19, 12),
+(19, 14),
+(19, 15),
+(20, 12),
+(20, 14),
+(20, 15);
 
 COMMIT;
