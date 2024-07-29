@@ -40,7 +40,8 @@ INSERT INTO "ustensil" ("name", "description", "url_image") VALUES ('Shaker', 'O
 ('Strainer', 'Passoire utilisé pour filtrer les glaçons et autres solides en versant le cocktail dans le verre de service. Les deux types principaux sont la passoire Hawthorne (avec un ressort) et la passoire Julep (en métal perforé). Utilisée pour filtrer les glaçons après avoir shaké ou mélangé un cocktail.', 'strainer.webp'),
 ('Pilon', 'Bâton en bois ou en métal utilisé pour écraser les fruits, les herbes et le sucre dans le fond d''un verre. Permet de libérer les arômes des ingrédients dans les cocktails comme le Mojito et la Caipirinha.', 'pilon.webp'),
 ('Doseur', 'Petit outil de mesure en forme de sablier utilisé pour doser les ingrédients liquides. Il a généralement deux côtés, un côté plus grand et un côté plus petit.', 'doseur.webp'),
-('Presse-agrumes', 'Outil manuel ou éléctrique utilisé pour extraire le jus des agrumes.', 'presse_agrumes.webp'),('Verres à shot', 'Petits verres utilisés pour mesurer et servir les spiritueux purs ou les shooters.
+('Presse-agrumes', 'Outil manuel ou éléctrique utilisé pour extraire le jus des agrumes.', 'presse_agrumes.webp'),
+('Verres à shot', 'Petits verres utilisés pour mesurer et servir les spiritueux purs ou les shooters.
 ', 'verres_a_shot.webp'),
 ('Blender', 'Mixeur électrique utilisé pour mélanger des ingrédients à haute vitesse. Idéal pour les cocktails glacés et les smoothies.', 'blender.webp'),
 ('Zesteur', 'Petit outil utilisé pour prélever des zestes d''agrumes pour les utilisés comme garniture ou décoration.', 'zesteur.webp'),
@@ -74,7 +75,7 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Jus de cranberry', 'Jus de cranberry.', 'jus_de_cranberry.webp'),
 ('Compote de poire', 'Compote de poire.', 'compote_poire.webp'),
 ('Jus de citron', 'Jus extrait du citron, utilisé pour ajouter une acidité et un éclat de saveur.', 'jus_de_citron.webp'),
-('Jus de fruits de la passion', 'Jus de fruits de la passion.', 'Jus_de_fruits_de_la_passion.webp'),
+('Jus de passion', 'Jus de fruits de la passion.', 'Jus_de_fruits_de_la_passion.webp'),
 ('Jus de citron vert', 'Jus extrait du lime, souvent utilisé pour son acidité vive et son goût légèrement amer.', 'jus_de_citron_vert.webp'),
 ('Citron vert', 'Citron vert', 'citron_vert.webp'),
 ('Menthe', 'Feuille de menthe', 'feuille_de_menthe.webp'),
@@ -97,7 +98,14 @@ INSERT INTO "ingredient" ("name", "description", "url_image") VALUES ('Vodka', '
 ('Vodka au safran', 'Vodka infusée au safran', 'vodka_safran.webp'),
 ('Sirop de cannelle', 'sirop à la cannelle', 'sirop_cannelle.webp'),
 ('Pêche fraiche', 'pêche fraiche', 'peche.webp'),
-('Jus de pêche', 'Jus de pêche', 'jus_peche.webp');
+('Jus de pêche', 'Jus de pêche', 'jus_peche.webp'),
+('Jus Aloe Vera', 'Jus d''aloe vera', 'jus-aloe-vera.webp'),
+('Sirop de rose', 'sirop de rose', 'sirop_de_rose.webp'),
+('Kiwi frais', 'kiwi frais', 'kiwi.webp'),
+('Fruit de la passion', 'fruit de la passion', 'fruit_passion.webp'),
+('Vodka vanille', 'Vodka vanille', 'vodka_vanille.webp'),
+('Cachaça', 'Spiritueux brésilien à base de canne à sucre.', 'cachaca.webp');
+
 
 INSERT INTO "recipe" ("name", "description", "advice", "history", "url_image", "step_1", "step_2", "step_3", "step_4", "step_5", "step_6", "method_id", "taste_id", "glass_id") VALUES ('Margarita', 'La Margarita est un cocktail composé de tequila, de liqueur d''orange et de jus de citron vert, souvent servi avec du sel sur le bord du verre. La boisson est servie shaké, avec de la glace (on the rocks), mélangée avec de la glace (margarita frozen) ou sans glace (straight up).', 'Salez le bord du verre pour une Margarita traditionnelle. D''abord, il faut mouiller le bord du verre avec un morceau de citron vert, puis passer le verre dans du sel. Pour un goût plus délicat, privilégiez une tequila reposado ou añejo.', 'La Margarita a été inventée en octobre 1941, au Hussong''s Cantina à Ensenada, au Mexique, par le barman Don Carlos Orozco.', 'margarita_cocktail.webp', 'Mouiller le Bord: Utilisez un quartier de citron vert pour mouiller le bord du verre à Margarita.', 'Givrer le Bord: Passez le bord du verre dans du sel pour le givrer. Réservez le verre.', 'Dans un shaker, combinez les ingrédients suivants : 50 ml de tequila, 25 ml de liqueur d''orange (comme le Triple Sec ou le Cointreau), 25 ml de jus de citron vert fraîchement pressé et Remplissez le shaker avec des glaçons.', 'Secouez vigoureusement le shaker pendant environ 15 secondes pour bien mélanger et refroidir la boisson.', 'Filtrer: Versez le mélange à travers une passoire dans le verre préparé.','Déguster', 1, 3, 4),
 ('Italian spritz', 'Il se compose principalement de trois ingrédients : Prosecco, Aperol (ou parfois Campari) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement amère et rafraîchissante, souvent servie avec une tranche d''orange. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
@@ -114,7 +122,12 @@ Il est possible de remplacer l''Aperol par d''autres liqueurs : le Saint Germain
 ('Daiquiri pêche frozen', 'Le Daiquiri est un cocktail classique et rafraîchissant qui marie la douceur de la pêche avec l''acidité du citron vert et la force du rhum. Ce mélange équilibré est composé de rhum, de pêche fraiche, de jus de citron vert et de glace pilée, créant une boisson crémeuse et rafraîchissante. Le Daiquiri est souvent servi dans un verre à cocktail garni d''une tranche de pêche pour une touche de fraîcheur et de couleur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Pour une version plus acidulée, ajoutez un peu plus de jus de citron vert. Il est également possible de remplacer la pêche par vos fruits préférés', 'Le Daiquiri est un cocktail cubain classique qui a été créé au 19e siècle. Il est devenu populaire dans les bars et les restaurants de La Havane pour son goût rafraîchissant et sa simplicité. Depuis lors, le Daiquiri est devenu un cocktail emblématique de la scène cocktail internationale, apprécié pour sa fraîcheur et sa vivacité.', 'daiquiri_peche_frozen_cocktail.webp', 'Éplucher et découper la pêche en morceaux.', 'Mettre tous les ingrédients dans le blender.', 'Ajouter de la glace pilée jusqu''à hauteur.', 'Mixer pour obtenir une texture lisse et homogène.','Verser dans le verre.', 'Déguster.', 4, 6, 1),
 ('Spritz hugo', 'Il se compose principalement de trois ingrédients : Prosecco, liqueur de fleurs de sureau (par exemple Saint Germain) et une touche d''eau gazeuse. Ce mélange crée une boisson pétillante, légèrement florale et rafraîchissante, souvent servie avec une tranche de citron vert et de la menthe. Traditionnellement, le Spritz est apprécié comme apéritif lors des après-midis ensoleillés ou lors des apéritifs en soirée, offrant une explosion de saveurs vives et une couleur vibrante qui reflète l''esprit convivial de la culture italienne.', '
 Il est possible de remplacer la liqueur de fleurs de sureau par d''autres liqueurs : l''aperol pour une légère amertume, le Campari pour une amertume encore plus prononcée, le Limoncello pour une note citronnée, ou la liqueur de framboise pour un goût très fruité. La seule limite est votre imagination!', 'Le Spritz Hugo a été créé par l''hôtelière et restauratrice tirolienne, Roland Gruber, dans la région de Trentin-Haut-Adige, en Italie du Nord, vers la fin des années 2000. Ce cocktail a été conçu pour offrir une alternative rafraîchissante au Spritz classique, en mettant en avant des saveurs plus florales et herbacées. Le nom "Hugo" a été choisi en l''honneur d''un ami du créateur, et le cocktail a rapidement gagné en popularité grâce à son goût rafraîchissant et sa présentation attrayante. Il est souvent servi dans un grand verre à vin ou un verre à cocktail avec beaucoup de glace, et décoré de feuilles de menthe et de tranches de lime. Le succès du Spritz Hugo a contribué à la popularisation des cocktails à base de fleurs de sureau dans le monde entier, et il est devenu un choix populaire lors des apéritifs et des événements estivaux.', 'spritz_hugo_cocktail.webp', 'Remplir le verre avec de gros glaçons.', 'Verser la liqueur, le Prosecco (de préférence extra dry pour ne pas ajouter trop de sucre) et l''eau gazeuse.', 'Remuer doucement pour mélanger les ingrédients.', 'Ajouter les quartiers de citron vert et la menthe', 'Rajouter de la glace si nécessaire', 'Déguster', 2, 8, 5),
-('Tiki pear', 'Les cocktails tiki sont des boissons tropicales souvent élaborées avec plusieurs types de rhum, des jus de fruits, des sirops et des bitters, et servis dans des verres ou mugs décoratifs. Les cocktails tiki sont connus pour leurs saveurs complexes et exotiques, leurs couleurs vives et leurs décorations extravagantes. Ils sont souvent garnis de fruits frais, de parasols, de pailles colorées et de décorations en forme de palmiers ou de fleurs. Les cocktails tiki sont parfaits pour les fêtes estivales, les barbecues en plein air et les soirées à thème hawaïen.', 'Pour une version plus épicée, ajoutez des épices comme la cannelle, le gingembre ou le piment. Il est également possible de remplacer le rhum par de la tequila, de la vodka ou du gin pour des variantes intéressantes.', 'Les cocktails tiki ont été créés dans les années 1930 par le barman américain Donn Beach, également connu sous le nom de Don the Beachcomber. Beach a ouvert le premier bar tiki à Hollywood, en Californie, où il a inventé des recettes de cocktails exotiques inspirées des saveurs des îles du Pacifique. Les cocktails tiki sont devenus populaires dans les années 1940 et 1950, grâce à leur mélange de saveurs tropicales, de rhum et de décoration thématique. Depuis lors, les cocktails tiki sont devenus un classique de la scène cocktail internationale, appréciés pour leur exotisme et leur originalité.', 'tiki_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser les ingrédients dans le shaker.', 'Shaker vigoureusement avec de la glace.', 'Filtrer le mélange dans le verre.', 'Décorer avec des fruits frais, des parasols et des pailles colorées.', 'Déguster.', 1, 6, 12);
+('Tiki pear', 'Les cocktails tiki sont des boissons tropicales souvent élaborées avec plusieurs types de rhum, des jus de fruits, des sirops et des bitters, et servis dans des verres ou mugs décoratifs. Les cocktails tiki sont connus pour leurs saveurs complexes et exotiques, leurs couleurs vives et leurs décorations extravagantes. Ils sont souvent garnis de fruits frais, de parasols, de pailles colorées et de décorations en forme de palmiers ou de fleurs. Les cocktails tiki sont parfaits pour les fêtes estivales, les barbecues en plein air et les soirées à thème hawaïen.', 'Pour une version plus épicée, ajoutez des épices comme la cannelle, le gingembre ou le piment. Il est également possible de remplacer le rhum par de la tequila, de la vodka ou du gin pour des variantes intéressantes.', 'Les cocktails tiki ont été créés dans les années 1930 par le barman américain Donn Beach, également connu sous le nom de Don the Beachcomber. Beach a ouvert le premier bar tiki à Hollywood, en Californie, où il a inventé des recettes de cocktails exotiques inspirées des saveurs des îles du Pacifique. Les cocktails tiki sont devenus populaires dans les années 1940 et 1950, grâce à leur mélange de saveurs tropicales, de rhum et de décoration thématique. Depuis lors, les cocktails tiki sont devenus un classique de la scène cocktail internationale, appréciés pour leur exotisme et leur originalité.', 'tiki_cocktail.webp', 'Remplir le verre de glace pour le rafraîchir.', 'Verser les ingrédients dans le shaker.', 'Shaker vigoureusement avec de la glace.', 'Filtrer le mélange dans le verre.', 'Décorer avec des fruits frais, des parasols et des pailles colorées.', 'Déguster.', 1, 6, 12),
+('Kiwix', 'Le Kiwix est un cocktail rafraîchissant et fruité qui marie la douceur du kiwi avec l''acidité du citron vert et la force du gin. Ce mélange équilibré est composé de gin, de kiwi frais, de jus de citron vert, de sirop de rose et de jus d''aloe vera,' , 'Il est crucial de mixer le cocktail au blender avant de le shaker pour réduire les grains de kiwi, ce qui libérera une délicate note poivrée et ajoutera de la profondeur au goût du mélange. Il est également important d''utiliser du gin Hendrick’s, qui se distingue par son élaboration à base de concombre et de rose, pour enrichir encore davantage le profil aromatique du cocktail.', 'Le Kiwix a été inventé en 2010 par le talentueux barman français Kévin Standaert, alors qu''il travaillait au bar du Wiltcher''s, un prestigieux hôtel de luxe situé à Bruxelles. Cette création a été spécialement élaborée pour marquer la finale du concours Hendrick’s Chimera.', 'kiwix_cocktail.webp', 'Éplucher et découper un kiwi entier.', 'Mettre le kiwi découpé et les autres ingrédients dans le blender.','Mixer jusqu''à obtenir une texture homogène.','Verser la préparation dans un shaker rempli de glace et shaker énergiquement.','Filtrer le mélange dans un verre rempli de glace.','Déguster.', 1, 6, 2),
+('Porn star martini', 'Le Porn Star Martini se distingue par sa couleur dorée vive et est souvent décoré d''un demi-fruit de la passion en garniture. Sa combinaison de saveurs fruitées et sucrées en fait une option populaire pour ceux qui recherchent une boisson élégante et raffinée.', 'Il est possible de remplacer le shot de champagne par du prosecco ou un autre vin effervescent sec. Pour une touche plus gourmande, vous pouvez caraméliser le fruit de la passion avec un peu de sucre à l''aide d''un chalumeau.', 'Le Porn Star Martini est un cocktail moderne et audacieux, connu pour son goût tropical et sa présentation élégante. Créé au début des années 2000 par le barman britannique Douglas Ankrah, ce cocktail allie la douceur du fruit de la passion à la richesse de la vanille et la complexité du vodka. Le nom Porn Star Martini joue sur un jeu de mots et fait référence au geste de dégustation du fruit de la passion pour accentuer le caractère sensuel et élégant du cocktail, tout en éveillant l''intérêt des amateurs de cocktails.', 'porn_star_martini_cocktail.webp', 'Dans un shaker, vider la moitié d''un fruit de la passion et réserver l''autre moitié pour la dégustation.','Verser les autres ingrédients dans le shaker et shaker vigoureusement avec de la glace.','Filtrer le mélange dans un verre.','Déposer le demi-fruit de la passion sur le cocktail.','Servir avec un shot de champagne.','Boire le shot de champagne en premier pour "rincer les papilles", déguster le cocktail, puis terminer par le fruit de la passion.', 1, 6, 1),
+('Caipirinha', 'La Caipirinha est un cocktail brésilien classique et rafraîchissant qui marie la douceur de la cachaça avec l''acidité du citron vert et la force du sucre. Ce mélange équilibré est composé de cachaça, de citron vert, de sucre et de glace pilée, créant une boisson vivifiante et acidulée. La Caipirinha est souvent servie dans un verre old fashioned sur glace pilée, garnie de quartiers de citron vert pour une touche de fraîcheur et de couleur.', 'Pour une version plus sucrée, ajoutez un peu de sirop de sucre supplémentaire. Pour une version plus acidulée, ajoutez un peu plus de jus de citron vert. Il est également possible d''ajouter d''autres fruits pour aromatiser le cocktail, comme la passion, la fraise ou la framboise.', 'La Caipirinha est un cocktail brésilien traditionnel qui a été créé au 19e siècle. Il est devenu populaire dans les bars et les restaurants de Rio de Janeiro pour son goût rafraîchissant et sa simplicité. Depuis lors, la Caipirinha est devenue un cocktail emblématique de la scène cocktail internationale, appréciée pour sa fraîcheur et sa vivacité', 'caipirinha_cocktail.webp', 'Couper le citron vert en quartiers.', 'Mettre les quartiers de citron vert et le sucre dans le verre.', 'Piler pour extraire le jus et les huiles essentielles du citron vert.', 'Remplir le verre de glace pilée.', 'Verser la cachaça sur la glace et mélanger doucement.', 'Ajouter de la glace si nécessaire et déguster', 3, 3, 2),
+('Moscow Mule', 'Le Moscow Mule est un cocktail rafraîchissant et pétillant qui marie la chaleur de la vodka avec le piquant du gingembre et l''acidité du citron vert. Ce mélange équilibré est composé de vodka, de ginger beer et de jus de citron vert, créant une boisson vive et acidulée. Le Moscow Mule est souvent servi dans une tasse en cuivre sur glace pilée, garni d''une tranche de citron vert pour une touche de fraîcheur et de couleur.', 'Vous pouvez remplacer la vodka par du gin pour réaliser un London Mule, ou utiliser de la vodka aromatisée (comme au concombre, à la myrtille ou au piment) pour varier les saveurs. Optez pour une vodka de qualité et un ginger beer au goût intense (comme Fever-Tree) pour garantir un cocktail riche en saveurs.', 'Le Moscow Mule a été inventé dans les années 1940 par John G. Martin, un vendeur de vodka, et Jack Morgan, le propriétaire d''une entreprise de ginger beer, dans le but de promouvoir leurs produits respectifs. Le cocktail a été servi pour la première fois dans une tasse en cuivre, qui est devenue emblématique du Moscow Mule. Depuis lors, le Moscow Mule est devenu un cocktail classique apprécié pour sa simplicité et sa vivacité', 'moscow_mule_cocktail.webp', 'Remplir la tasse en cuivre de glace pour la rafraîchir.', 'Verser la vodka et le jus de citron vert dans la tasse.', 'Remplir la tasse de ginger beer.', 'Ajouter de le glace si nécessaire et mélanger doucement.', 'Ajouter une tranche de citron vert.', 'Déguster.', 6, 5, 9);
+
 
 
 
@@ -202,7 +215,23 @@ INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit"
 (14, 49, 20, 'ml'),
 (14, 29, 30, 'ml'),
 (14, 24, 30, 'ml'),
-(14, 28, 30, 'ml');
+(14, 28, 30, 'ml'),
+(15, 52, 40, 'ml'),
+(15, 53, 15, 'ml'),
+(15, 54, 1, ''),
+(15, 2, 50, 'ml'),
+(15, 29, 15, 'ml'),
+(16, 55, 1, ''),
+(16, 56, 50, 'ml'),
+(16, 28, 50, 'ml'),
+(16, 16, 10, 'ml'),
+(16, 29, 20, 'ml'),
+(17, 57, 60, 'ml'),
+(17, 30, 1, ''),
+(17, 16, 20, 'ml'),
+(18, 1, 50, 'ml'),
+(18, 32, 100, 'ml'),
+(18, 29, 20, 'ml');
 
 INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (1, 2),
@@ -212,7 +241,7 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (2, 2),
 (2, 6),
 (3, 6),
-(3, 8),
+(3, 9),
 (4, 1),
 (4, 4),
 (4, 6),
@@ -224,7 +253,7 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (6, 5),
 (6, 6),
 (6, 7),
-(6, 8),
+(6, 9),
 (7, 2),
 (7, 3),
 (7, 4),
@@ -241,12 +270,24 @@ INSERT INTO "recipe_ustensil" ("recipe_id", "ustensil_id") VALUES (1,1),
 (11, 5),
 (11, 6),
 (12, 6),
-(12, 8),
+(12, 9),
 (13, 2),
 (13, 6),
 (14, 1),
 (14, 4),
-(14, 6);
+(14, 6),
+(15, 1),
+(15, 4),
+(15, 6),
+(15, 9),
+(16, 1),
+(16, 4),
+(16, 6),
+(16, 8),
+(17, 2),
+(17, 5),
+(18, 2),
+(18, 6);
 
 INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (1, 2),
@@ -270,6 +311,11 @@ INSERT INTO "recipe_category" ("recipe_id", "category_id") VALUES (1, 1),
 (13, 7),
 (13, 12),
 (14, 6),
-(14, 14);
+(14, 14),
+(15, 14),
+(16, 1),
+(16, 7),
+(17, 1),
+(18, 1);
 
 COMMIT;
