@@ -13,7 +13,7 @@ materialRouter.route('/')
    * @return {ApiJsonError} 400 - Bad request response - application/json
    * @return {ApiJsonError} 500 - Internal Server Error - application/json
    */
-  .get(controllerWrapper(materialsController.findAll.bind(materialsController)));
+  .get(controllerWrapper(materialsController.getAll.bind(materialsController)));
 
 materialRouter.route('/:id(\\d+)')
   /**
@@ -26,4 +26,6 @@ materialRouter.route('/:id(\\d+)')
    * @return {ApiJsonError} 404 - Not found response - application/json
    * @return {ApiJsonError} 500 - Internal Server Error - application/json
    */
-  .get(controllerWrapper(materialsController.findByPk.bind(materialsController)));
+  .get(controllerWrapper(materialsController.getByPk.bind(materialsController)));
+
+export default materialRouter;
