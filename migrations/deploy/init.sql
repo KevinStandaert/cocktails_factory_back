@@ -51,7 +51,11 @@ CREATE TABLE "ustensil" (
   "id" int GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   "name" varchar(255) NOT NULL,
   "description" text NOT NULL,
-  "url_image" varchar(255) NOT NULL,
+  "use" text NOT NULL,
+  "alternative" text NOT NULL,
+  "url_image_1" varchar(255) NOT NULL,
+  "url_image_2" varchar(255) NOT NULL,
+  "url_image_3" varchar(255) NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT now(),
   "updated_at" timestamptz
 );

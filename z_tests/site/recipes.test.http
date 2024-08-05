@@ -15,3 +15,6 @@ GET {{endpoint}}/recipes/cards/3
 
 ### getRecipesRandomly
 GET {{endpoint}}/recipes/cards/random
+
+### getAllMaterials
+GET {{endpoint}}/materials
