@@ -8,8 +8,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "db:reset": "sqitch revert -y; sqitch deploy; psql -d cocktails_factory -f real_seeding.sql",
-    "dev": "DEBUG=app:* npx nodemon"
+    "db:reset": "sqitch revert -y; sqitch deploy; psql -h dpg-crbd3vd6l47c73d4busg-a.frankfurt-postgres.render.com -U cocktails_factory_flpz_user -d cocktails_factory_flpz -f real_seeding.sql",
+    "dev": "DEBUG=app:* npx nodemon",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

@@ -170,7 +170,8 @@ INSERT INTO "category" ("name", "description") VALUES ('Classique', 'Les cocktai
 ('Thé', 'Les cocktails à base de thé utilisent le thé comme ingrédient principal, apportant des saveurs complexes et des arômes subtils.');
 
 
-INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit") VALUES (1, 5, 50,'ml'),
+INSERT INTO "recipe_ingredient" ("recipe_id", "ingredient_id", "quantity","unit") VALUES 
+(1, 5, 50, 'ml'),
 (1, 12, 25, 'ml'),
 (1, 29, 25, 'ml'),
 (2, 19, 60, 'ml'),
