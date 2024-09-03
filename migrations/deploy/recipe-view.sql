@@ -7,7 +7,7 @@ CREATE OR REPLACE VIEW "recipe_view_all" AS
 WITH ingredient_info AS (
     SELECT
         "recipe_id",
-        json_agg(json_build_object('name', "ingredient"."name", 'quantity', "recipe_ingredient"."quantity") ORDER BY "ingredient"."name") AS "ingredients"
+        json_agg(json_build_object('name', "ingredient"."name", 'quantity', "recipe_ingredient"."quantity", 'unit', "recipe_ingredient"."unit") ORDER BY "ingredient"."name") AS "ingredients"
     FROM
         "recipe_ingredient"
     JOIN
@@ -46,17 +46,17 @@ GROUP BY
 --  Create a view named recipe_view_card that returns the name, image and ingredients of a recipe
 CREATE OR REPLACE VIEW recipe_view_card AS
 SELECT 
-"recipe"."id",
-"recipe"."name",
-"recipe"."url_image",
-json_agg( "ingredient"."name")
+	"recipe"."id",
+    "recipe"."name",
+    "recipe"."url_image",
+	"taste"."type" AS "taste",
+    json_agg("ingredient"."name") AS "ingredients"
 FROM "recipe"
-JOIN "recipe_ingredient"
-ON "recipe"."id" = "recipe_id"
-JOIN "ingredient"
-ON "ingredient_id" = "ingredient"."id"
-GROUP BY "recipe"."id", "recipe"."name", "recipe"."url_image"
-ORDER BY "recipe"."id" ASC;
+JOIN "taste" ON "recipe"."taste_id" = "taste"."id"
+JOIN "recipe_ingredient" ON "recipe"."id" = "recipe_id"
+JOIN "ingredient" ON "ingredient_id" = "ingredient"."id"
+GROUP BY "recipe"."id", "recipe"."name", "taste"."type", "recipe"."url_image"
+ORDER BY "recipe"."name";
 
 
 --  Create a view named recipe_view_random that returns the name, image and ingredients of 3 random recipes

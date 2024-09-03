@@ -51,7 +51,11 @@ CREATE TABLE "ustensil" (
   "id" int GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   "name" varchar(255) NOT NULL,
   "description" text NOT NULL,
-  "url_image" varchar(255) NOT NULL,
+  "use" text NOT NULL,
+  "alternative" text NOT NULL,
+  "url_image_1" varchar(255) NOT NULL,
+  "url_image_2" varchar(255) NOT NULL,
+  "url_image_3" varchar(255) NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT now(),
   "updated_at" timestamptz
 );
@@ -78,6 +82,7 @@ CREATE TABLE "recipe_ingredient" (
   "recipe_id" int NOT NULL REFERENCES "recipe" ("id"),
   "ingredient_id" int NOT NULL REFERENCES "ingredient" ("id"),
   "quantity" int NOT NULL,
+  "unit" varchar(50) NOT NULL,
   "created_at" timestamptz NOT NULL DEFAULT now(),
   "updated_at" timestamptz,
   UNIQUE ("recipe_id", "ingredient_id")
