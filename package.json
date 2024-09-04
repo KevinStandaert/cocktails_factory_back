@@ -8,7 +8,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "db:reset": "sqitch revert -y; sqitch deploy; psql -h dpg-crbd3vd6l47c73d4busg-a.frankfurt-postgres.render.com -U cocktails_factory_flpz_user -d cocktails_factory_flpz -f real_seeding.sql",
+    "db:reset-prod": "sqitch revert -y && sqitch deploy && psql \"postgres://default:@ep-odd-wave-a2w0hcme.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require\" -f real_seeding.sql",
+    "db:reset": "sqitch revert -y; sqitch deploy; psql -h localhost -U kevinstandaert -d cocktails_factory -f real_seeding.sql",
     "dev": "DEBUG=app:* npx nodemon",
     "start": "node index.js"
   },
@@ -22,6 +23,7 @@
     "eslint-plugin-import": "^2.29.1"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",

@@ -64,6 +64,31 @@
             "date": 1725354959082,
             "name": "logs/combined.log.2024-09-03-11-15",
             "hash": "3470fa4f64b5dd51392f0e9582dec825ef364ecd722e8760cb1a4e3b9a8f1bd0"
+        },
+        {
+            "date": 1725357461859,
+            "name": "logs/combined.log.2024-09-03-11-57",
+            "hash": "ba5a236e3a7d9e6a0d77603a62b705e797c0caa9202dfa7e6f75cb403634e225"
+        },
+        {
+            "date": 1725434514428,
+            "name": "logs/combined.log.2024-09-04-09-21",
+            "hash": "0a2c4e5c7218bffed17e7ba8d6e550fb7af7820a2c305205470547a17935c9bf"
+        },
+        {
+            "date": 1725439788235,
+            "name": "logs/combined.log.2024-09-04-10-49",
+            "hash": "584ffab1bfc04d6fd36bf5d0e0a8473d2d180d3c8fd9b8f9d6031150aa99cd36"
+        },
+        {
+            "date": 1725439925135,
+            "name": "logs/combined.log.2024-09-04-10-52",
+            "hash": "9b3a9a9bcfe6667e7fa0a047649ad96ae82df8f8b7fe0f09a46f412374ce7c55"
+        },
+        {
+            "date": 1725440005799,
+            "name": "logs/combined.log.2024-09-04-10-53",
+            "hash": "82bf1122e7c38ea59160af87c0086dedf7af76182cc5db2d9b7c3b0167fc274a"
         }
     ],
     "hashType": "sha256"
