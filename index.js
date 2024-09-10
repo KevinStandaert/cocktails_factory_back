@@ -1,6 +1,6 @@
 import { createServer } from 'node:http';
-import './app/helpers/env.load.js';
-import app from './app/index.app.js';
+import './api/helpers/env.load.js';
+import app from './api/index.app.js';
 
 const server = createServer(app);
 
